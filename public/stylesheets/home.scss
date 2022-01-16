@@ -1,0 +1,51 @@
+html {
+    margin: none;
+}
+
+h1 {
+    margin: 0;
+}
+.header {
+    height: 100vh;
+    background-color: lightblue;
+    text-align: center;
+    margin: 0;
+    background: url(images/HeaderImg.jpg);
+    background-size: cover;
+    max-width: 100%; 
+}
+
+.headertext {
+    margin-top: 285px;
+    font-size: 150%;
+}
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    height: 130px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.5;
+    width: 100%;
+    ul {    
+        width: 400px;
+        display: flex;
+        background-color: lightcoral;
+        justify-content: space-between;
+        margin-right: 50px;
+        
+    }
+    li {
+        list-style: none;
+        display: inline;
+    }
+
+    h1 {
+        margin-left: 50px;
+    }
+}
