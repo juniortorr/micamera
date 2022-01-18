@@ -140,6 +140,11 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+.section2 .section2Btns a {
+  text-decoration: none;
+  color: black;
+}
+
 .aboutMe {
   height: 100vh;
   background-color: rgba(109, 153, 206, 0.3);
@@ -197,5 +202,10 @@ body {
   background-color: rgba(255, 255, 255, 0.7);
   border: 2px solid black;
   border-radius: 10px;
+}
+
+.aboutMe a {
+  text-decoration: none;
+  color: black;
 }
 /*# sourceMappingURL=home.css.map */
