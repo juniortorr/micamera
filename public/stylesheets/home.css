@@ -72,7 +72,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-right: 2em;
-  font-size: 120%;
+  font-size: 1.1em;
 }
 
 .navbar li {
@@ -97,6 +97,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: rgba(197, 219, 245, 0.1);
 }
 
 .section2 h1 {
@@ -135,6 +136,66 @@ body {
   width: 29%;
   padding: .75em .75em;
   font-size: 1.2rem;
-  background-color: white;
+  font-weight: lighter;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.aboutMe {
+  height: 100vh;
+  background-color: rgba(109, 153, 206, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutMe .aboutMeTxt {
+  position: relative;
+  height: 80%;
+  width: 36%;
+  margin-right: 5%;
+}
+
+.aboutMe .aboutMeTxt h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 3.5rem;
+  margin: 0;
+  font-weight: lighter;
+}
+
+.aboutMe .aboutMeTxt h2 {
+  width: 100%;
+  text-align: center;
+  margin: .3em;
+  font-size: 2.2rem;
+  font-weight: lighter;
+}
+
+.aboutMe .aboutMeTxt p {
+  font-size: 1.5rem;
+  line-height: 180%;
+  font-weight: 100;
+}
+
+.aboutMe img {
+  height: 90%;
+}
+
+.aboutMe button {
+  position: absolute;
+  bottom: 7%;
+  right: .5%;
+  width: 17em;
+  padding: .75em .75em;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 2px solid black;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=home.css.map */

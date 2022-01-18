@@ -62,7 +62,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-right: 2em;
-    font-size: 120%;
+    font-size: 1.1em;
   }
   li {
     list-style: none;
@@ -82,6 +82,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgba(197, 219, 245, 0.1);
 
   h1 {
     margin: 1em;
@@ -99,18 +100,75 @@ body {
     width: 29%;
   }
 
-.section2Btns {
-  width: 70%;
-  display: flex;
-  justify-content: space-between;
+  .section2Btns {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
 
-  button {
-    margin: .82em;
-    width: 29%;
-    padding: .75em .75em;
-    font-size: 1.2rem;
-    background-color: white;
+    button {
+      margin: .82em;
+      width: 29%;
+      padding: .75em .75em;
+      font-size: 1.2rem;
+      font-weight: lighter;
+      background-color: rgba(255, 255, 255, .3);
+    }
   }
 }
+
+.aboutMe {
+  height: 100vh;
+  background-color: rgba(109, 153, 206, .3);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .aboutMeTxt {
+    position: relative;
+    height: 80%;
+    width: 36%;
+    margin-right: 5%;
+
+    h1 {
+      width: 100%;
+      text-align: center;
+      font-size: 3.5rem;
+      margin: 0;
+      font-weight: lighter;
+    }
+
+    h2 {
+      width: 100%;
+      text-align: center;
+      margin: .3em;
+      font-size: 2.2rem;
+      font-weight: lighter;
+    }
+
+    p {
+      font-size: 1.5rem;
+      line-height: 180%;
+      font-weight: 100;
+    }
+  }
+
+  img {
+    height: 90%;
+  }
+
+  button {
+    position: absolute;
+    bottom: 7%;
+    right: .5%; 
+    width: 17em;
+    padding: .75em .75em;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    background-color: rgba(255, 255, 255, .7);
+    border: 2px solid black;
+    border-radius: 10px;
+
+  }
+  
 }
 
