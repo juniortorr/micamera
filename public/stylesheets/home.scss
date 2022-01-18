@@ -1,0 +1,183 @@
+html {
+  margin: none;
+}
+
+h1 {
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+// Section 1 (Hero Image and content within //
+
+.header {
+  height: 100vh;
+  background-color: lightblue;
+  text-align: center;
+  margin: 0;
+  background: url(images/HeaderImg2.jpg);
+  background-size: cover;
+  max-width: 100%;
+}
+
+.headertext {
+  margin-top: 10em;
+  font-size: 1.7rem;
+  color: white;
+}
+
+.subheading {
+  margin-top: 0.5em;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.homeBtn {
+  width: 18%;
+  height: 2em;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  margin-top: 0.5em;
+  border: 2px solid white;
+  color: white;
+  background-color: #5c88bc;
+}
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  height: 8vh;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.5;
+  width: 100vw;
+  ul {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2em;
+    font-size: 1.1em;
+  }
+  li {
+    list-style: none;
+    display: inline;
+    margin: 1em;
+  }
+
+  h1 {
+    margin-left: 2em;
+  }
+}
+
+// Section 2 //
+
+.section2 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(197, 219, 245, 0.1);
+
+  h1 {
+    margin: 1em;
+    font-size: 3rem;
+    font-weight: lighter;
+  }
+
+  .section2Imgs {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+  }
+  img {
+    margin: 1em;
+    width: 29%;
+  }
+
+  .section2Btns {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      margin: .82em;
+      width: 29%;
+      padding: .75em .75em;
+      font-size: 1.2rem;
+      font-weight: lighter;
+      background-color: rgba(255, 255, 255, .3);
+    }
+    a {
+      text-decoration: none;
+      color: black; 
+    }
+  }
+}
+
+.aboutMe {
+  height: 100vh;
+  background-color: rgba(109, 153, 206, .3);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .aboutMeTxt {
+    position: relative;
+    height: 80%;
+    width: 36%;
+    margin-right: 5%;
+
+    h1 {
+      width: 100%;
+      text-align: center;
+      font-size: 3.5rem;
+      margin: 0;
+      font-weight: lighter;
+    }
+
+    h2 {
+      width: 100%;
+      text-align: center;
+      margin: .3em;
+      font-size: 2.2rem;
+      font-weight: lighter;
+    }
+
+    p {
+      font-size: 1.5rem;
+      line-height: 180%;
+      font-weight: 100;
+    }
+  }
+
+  img {
+    height: 90%;
+  }
+
+  button {
+    position: absolute;
+    bottom: 7%;
+    right: .5%; 
+    width: 17em;
+    padding: .75em .75em;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    background-color: rgba(255, 255, 255, .7);
+    border: 2px solid black;
+    border-radius: 10px;
+
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+}
+
