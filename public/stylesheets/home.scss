@@ -17,7 +17,7 @@ body {
   background-color: lightblue;
   text-align: center;
   margin: 0;
-  background: url(images/HeaderImg2.jpg);
+  background: url(/imgs/HeaderImg2.jpg);
   background-size: cover;
   max-width: 100%;
 }
@@ -35,7 +35,7 @@ body {
 }
 
 .homeBtn {
-  width: 18%;
+  width: 15%;
   height: 2em;
   border-radius: 10px;
   font-size: 1.2rem;
@@ -49,31 +49,7 @@ body {
   margin: 0;
 }
 
-.navbar {
-  height: 8vh;
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  opacity: 0.5;
-  width: 100vw;
-  ul {
-    width: 20%;
-    display: flex;
-    justify-content: space-between;
-    margin-right: 2em;
-    font-size: 1.1em;
-  }
-  li {
-    list-style: none;
-    display: inline;
-    margin: 1em;
-  }
-
-  h1 {
-    margin-left: 2em;
-  }
-}
+@import "navbar";
 
 // Section 2 //
 
@@ -88,6 +64,7 @@ body {
     margin: 1em;
     font-size: 3rem;
     font-weight: lighter;
+    color: Black;
   }
 
   .section2Imgs {
@@ -112,10 +89,11 @@ body {
       font-size: 1.2rem;
       font-weight: lighter;
       background-color: rgba(255, 255, 255, .3);
+      border: 2px solid #5c88bc;
     }
     a {
       text-decoration: none;
-      color: black; 
+      color: #5c88bc; 
     }
   }
 }
@@ -127,11 +105,30 @@ body {
   justify-content: space-around;
   align-items: center;
 
+
+
   .aboutMeTxt {
-    position: relative;
     height: 80%;
     width: 36%;
     margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    
+
+    button {
+      // position: absolute;
+      // bottom: 7%;
+      // right: .5%; 
+      display: block;
+      width: 17em;
+      padding: .75em .75em;
+      font-size: 1.2rem;
+      font-weight: lighter;
+      background-color: rgba(255, 255, 255, .7);
+      border: 2px solid black;
+      border-radius: 10px;
+      align-self: flex-end;
+    }
 
     h1 {
       width: 100%;
@@ -155,24 +152,15 @@ body {
       font-weight: 100;
     }
   }
-
-  img {
+  .img {
+    background-color: black;
     height: 90%;
-  }
+    width: 30%;
 
-  button {
-    position: absolute;
-    bottom: 7%;
-    right: .5%; 
-    width: 17em;
-    padding: .75em .75em;
-    font-size: 1.2rem;
-    font-weight: lighter;
-    background-color: rgba(255, 255, 255, .7);
-    border: 2px solid black;
-    border-radius: 10px;
-
-  }
+    img{
+      height: 100%;
+    }
+}
 
   a {
     text-decoration: none;
@@ -180,4 +168,91 @@ body {
   }
   
 }
+
+.section3 {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  // background-color: lightcoral;
+  margin: 0;
+
+  .content {
+
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    margin: auto auto;
+    margin-top: 50px;
+
+    p {
+      margin: 0;
+    }
+  
+    img {
+      display: block;
+      width: 45%;
+    }
+  
+  }
+  .testimonials {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+
+    .group {
+      display: flex;
+      flex-direction: column;
+      width: 45%;
+      align-items: center;
+      justify-content: center;
+
+      .line {
+        margin: 0 0 20px;
+        display: block;
+        width: 30%;
+        border-bottom: 2px solid black;
+        line-height: 0.1em;
+      }
+
+      p {     
+        text-align: center;
+        margin: auto;
+        width: 60%; 
+        font-size: 1.5rem;
+        margin: 0;
+        padding: none;
+        line-height: 1.5em;
+        // right: 10%;
+      }
+      h2 {
+        font-size: 1.7rem;
+      }
+    }
+    img {
+      width: 45%;
+  }
+  }
+}
+
+footer {
+  display: flex;
+  margin-top: 15em;
+  justify-content: flex-start;
+  height: 18em;
+  width: 100%;
+  background-color: #234770;
+
+  .quickLinks {
+    color: white;
+    height: 100%;
+    margin-left: 150px;
+    margin-top: 1em;
+  }
+
+}
+
+
 

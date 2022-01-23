@@ -1,0 +1,29 @@
+.navbar {
+    height: 8vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.5;
+    width: 100vw;
+    ul {
+      width: 20%;
+      display: flex;
+      justify-content: space-between;
+      margin-right: 2em;
+      font-size: 1.1em;
+    }
+    li {
+      list-style: none;
+      display: inline;
+      margin: 1em;
+    }
+    a {
+      text-decoration: none;
+      color: black; 
+    }
+  
+    h1 {
+      margin-left: 2em;
+    }
+  }
