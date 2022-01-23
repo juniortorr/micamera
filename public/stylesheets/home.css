@@ -15,7 +15,7 @@ body {
   background-color: lightblue;
   text-align: center;
   margin: 0;
-  background: url(images/HeaderImg2.jpg);
+  background: url(/imgs/HeaderImg2.jpg);
   background-size: cover;
   max-width: 100%;
 }

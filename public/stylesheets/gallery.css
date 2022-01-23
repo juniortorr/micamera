@@ -1,0 +1,78 @@
+.navbar {
+  height: 8vh;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0.5;
+  width: 100vw;
+}
+
+.navbar ul {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 2em;
+  font-size: 1.1em;
+}
+
+.navbar li {
+  list-style: none;
+  display: inline;
+  margin: 1em;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar h1 {
+  margin-left: 2em;
+}
+
+html {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95%;
+  height: 176vh;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.container img {
+  width: 32.5%;
+  margin: 0;
+}
+/*# sourceMappingURL=gallery.css.map */
