@@ -5,42 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - Micamera</title>
+
+    <link rel="stylesheet" href="/stylesheets/contact.css" />
   </head>
   <body>
     <h1>Get In Touch</h1>
-    <p class="subheading">Now Booking 2022</p>
+    <p class="subheading">
+      <span class="subheading-linebreak"></span>Now Booking 2022<span
+        class="subheading-linebreak"
+      ></span>
+    </p>
 
-    <p class="form-instructions">
+    <p class="main-paragraph">
       Thank you so much for looking around! If you're interested in having me
       document some of your soon-to-be-favorite moments, please fill out the
       form below and I will reach out to you as soon as possible!
     </p>
 
-    <img src="" alt="arrow indicator" />
+    <form class="contact-form" action="">
+      <div class="column">
+        <div class="input-element first-name">
+          <label for="firstName">First Name</label>
+          <input id="firstName" name="" value="" type="text" />
+        </div>
 
-    <form action="">
-      <label for="firstName">First Name</label>
-      <input id="firstName" name="" value="" type="text" />
+        <div class="input-element last-name">
+          <label for="lastName">Last Name</label>
+          <input id="lastname" name="" value="" type="text" />
+        </div>
 
-      <label for="lastName">Last Name</label>
-      <input id="lastname" name="" value="" type="text" />
+        <div class="input-element email">
+          <label for="email">Email Address</label>
+          <input id="email" name="" value="" type="email" />
+        </div>
+      </div>
 
-      <label for="email">Email Address</label>
-      <input id="email" name="" value="" type="email" />
+      <div class="column">
+        <div class="input-element package-select">
+          <label for="package">Package (Please Choose One)</label>
+          <select name="package" id="package">
+            <option value="">Mi Amor Package</option>
+            <option value="">Us Package</option>
+            <option value="">Together Package</option>
+            <option value="">Corazones Package</option>
+            <option value="">Other</option>
+          </select>
+        </div>
 
-      <label for="package">Package (Please Choose One)</label>
-      <select name="package" id="package">
-        <option value="">Mi Amor Package</option>
-        <option value="">Us Package</option>
-        <option value="">Together Package</option>
-        <option value="">Corazones Package</option>
-        <option value="">Other</option>
-      </select>
+        <div class="input-element notes-box">
+          <label for="notes">Notes</label>
+          <input id="notes" name="notes" value="" type="text" />
+        </div>
 
-      <label for="notes">Notes</label>
-      <input id="notes" name="notes" value="" type="text" />
-
-      <button>Send</button>
+        <div class="input-element send-button">
+          <button>Send</button>
+        </div>
+      </div>
     </form>
   </body>
 </html>
