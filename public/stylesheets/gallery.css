@@ -49,6 +49,10 @@ body {
   margin: 0;
 }
 
+.navbar {
+  opacity: 1;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
