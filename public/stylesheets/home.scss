@@ -20,6 +20,10 @@ body {
   background: url(/imgs/HeaderImg2.jpg);
   background-size: cover;
   max-width: 100%;
+  a {
+    text-decoration: none;
+    color: black;
+  }
 }
 
 .headertext {
