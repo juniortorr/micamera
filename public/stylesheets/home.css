@@ -374,4 +374,9 @@ footer .quickLinks {
   margin-left: 150px;
   margin-top: 1em;
 }
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
 /*# sourceMappingURL=home.css.map */
