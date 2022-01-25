@@ -6,10 +6,15 @@ body {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
 .header {
-  height: 100vh;
+  height: 65vh;
   background: url(/imgs/elliottBrenna4.jpg);
   background-size: cover;
+  background-position: 0px -150px;
   max-width: 100%;
 }
 /*# sourceMappingURL=services.css.map */
