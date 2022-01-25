@@ -1,16 +1,31 @@
-html {
-  margin: none;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: sans-serif;
 }
 
 h1 {
   margin: 0;
 }
 
-body {
-  font-family: sans-serif;
-}
-
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100vh;
   background-color: lightblue;
   text-align: center;
@@ -26,7 +41,6 @@ body {
 }
 
 .headertext {
-  margin-top: 10em;
   font-size: 1.7rem;
   color: white;
 }
@@ -38,8 +52,8 @@ body {
 }
 
 .homeBtn {
-  width: 15%;
-  height: 2em;
+  width: 35%;
+  height: 2.5em;
   border-radius: 10px;
   font-size: 1.2rem;
   margin-top: 0.5em;
@@ -48,13 +62,46 @@ body {
   background-color: #5c88bc;
 }
 
+.homeBtn a {
+  text-decoration: none;
+  color: white;
+}
+
 body {
   margin: 0;
 }
 
 .navbar {
-  height: 8vh;
-  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  height: 12vh;
+  background-color: rgba(109, 153, 206, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.navbar .options {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+
+.navbar ul {
+  width: 55%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,35 +111,19 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  opacity: 0.5;
-  width: 100vw;
-}
-
-.navbar ul {
-  width: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-right: 2em;
+  padding: 0;
+  margin: 0;
   font-size: 1.1em;
 }
 
 .navbar li {
   list-style: none;
   display: inline;
-  margin: 1em;
 }
 
 .navbar a {
   text-decoration: none;
-  color: black;
-}
-
-.navbar h1 {
-  margin-left: 2em;
+  color: white;
 }
 
 .section2 {
