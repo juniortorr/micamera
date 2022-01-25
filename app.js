@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //Begin Routes
 
 app.get('/', (req, res) => {
-  res.render('index');
+  res.render('home');
 });
 
 app.get('/about', (req, res) => {

@@ -1,0 +1,28 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@import "navbar";
+
+.content {
+    height: 100vh;
+    background-color: lightblue;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .text {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        background-color: red;
+    }
+    img {
+        width: 40%;
+    }
+    button {
+        width: 20%;
+    }
+}
