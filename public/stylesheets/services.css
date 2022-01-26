@@ -11,10 +11,14 @@ p {
 }
 
 .header {
-  height: 65vh;
+  height: 75vh;
   background: url(/imgs/elliottBrenna4.jpg);
   background-size: cover;
-  background-position: 0px -150px;
+  background-position: 0px -175px;
   max-width: 100%;
+}
+
+.header p {
+  text-align: center;
 }
 /*# sourceMappingURL=services.css.map */
