@@ -59,11 +59,15 @@ p {
 .navbar li {
   list-style: none;
   display: inline;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .navbar a {
   text-decoration: none;
   color: rgba(176, 225, 245, 0.911);
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .navbar img {
@@ -100,6 +104,16 @@ p {
 .navbar .btn button a {
   text-decoration: none;
   color: black;
+}
+
+.navbar ul li:hover {
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+}
+
+.navbar ul .nav-li:hover {
+  border-bottom: 1px solid white;
+  color: white;
 }
 
 .content {
