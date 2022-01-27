@@ -35,14 +35,27 @@
   li {
     list-style: none;
     display: inline;
+    transition: all 0.25s;
   }
   a {
     text-decoration: none;
     color: rgba(176, 225, 245, 0.911);
+    transition: all 0.25s;
   }
 
   .navbar-title a {
     color: white;
     font-weight: 100;
+  }
+
+  ul {
+    li:hover {
+      transform: translateY(-0.25em);
+    }
+
+    .nav-li:hover {
+      border-bottom: 1px solid white;
+      color: white;
+    }
   }
 }
