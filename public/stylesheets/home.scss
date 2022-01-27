@@ -4,7 +4,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   font-family: emoji;
 }
 
@@ -12,7 +12,7 @@ h1 {
   margin: 0;
 }
 
-// Section 1 (Hero Image and content within //
+// Section 1 Hero Image and content within //
 
 .header {
   display: flex;
@@ -33,7 +33,7 @@ h1 {
 }
 
 .headertext {
-  margin-top: 6em;
+  margin-top: 3em;
   font-size: 1.7rem;
   color: white;
 }
@@ -60,13 +60,11 @@ h1 {
   }
 }
 
-body {
-  margin: 0;
-}
+
 
 @import 'navbar';
 
-// Section 2 //
+// Section 2 (Styles of Photography//
 
 .section2 {
   height: 100vh;
@@ -112,6 +110,8 @@ body {
     }
   }
 }
+
+// About Me Section // 
 
 .aboutMe {
   height: 100vh;
@@ -181,6 +181,8 @@ body {
   }
 }
 
+//End About Me Begin Testimonials
+
 .section3 {
   display: flex;
   align-items: center;
@@ -246,6 +248,8 @@ body {
     }
   }
 }
+
+//End Testimonials & Begin Footer 
 
 footer {
   display: flex;
