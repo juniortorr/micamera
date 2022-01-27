@@ -13,8 +13,8 @@ p {
   position: fixed;
   top: 0;
   z-index: 100;
-  height: 12vh;
-  background-color: rgba(109, 153, 206, 0.8);
+  height: 8vh;
+  background-color: #234770f1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,6 +25,9 @@ p {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  font-family: emoji;
+  -webkit-box-shadow: 0px 5px 5px 3px rgba(50, 57, 58, 0.705);
+          box-shadow: 0px 5px 5px 3px rgba(50, 57, 58, 0.705);
 }
 
 .navbar .options {
@@ -61,7 +64,12 @@ p {
 
 .navbar a {
   text-decoration: none;
+  color: rgba(176, 225, 245, 0.911);
+}
+
+.navbar .navbar-title a {
   color: white;
+  font-weight: 100;
 }
 
 .content {
