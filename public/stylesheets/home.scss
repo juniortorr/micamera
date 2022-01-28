@@ -1,3 +1,6 @@
+@import 'navbar';
+@import 'footer';
+
 html,
 body {
   width: 100%;
@@ -60,10 +63,6 @@ h1 {
   }
 }
 
-
-
-@import 'navbar';
-
 // Section 2 (Styles of Photography//
 
 .section2 {
@@ -111,7 +110,7 @@ h1 {
   }
 }
 
-// About Me Section // 
+// About Me Section //
 
 .aboutMe {
   height: 100vh;
@@ -165,7 +164,6 @@ h1 {
     }
   }
   .img {
-    
     height: 90%;
     width: 30%;
 
@@ -249,38 +247,4 @@ h1 {
   }
 }
 
-//End Testimonials & Begin Footer 
-
-footer {
-  display: flex;
-  margin-top: 15em;
-  justify-content: flex-start;
-  height: 18em;
-  width: 100%;
-  background-color: #234770;
-
-  .quickLinks {
-    color: white;
-    height: 100%;
-    margin-left: 150px;
-    margin-top: 1em;
-  }
-  a {
-    text-decoration: none;
-    color: white;
-  }
-
-
-  .social {
-    display: flex;  
-    justify-content: space-between;
-    width: 70%;
-
-    p {
-      margin: 0;
-      margin-top: .4em;
-    }
-  }
-
-
-}
+//End Testimonials

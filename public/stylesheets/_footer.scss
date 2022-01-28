@@ -1,0 +1,30 @@
+footer {
+  display: flex;
+  margin-top: 15em;
+  justify-content: flex-start;
+  height: 18em;
+  width: 100%;
+  background-color: #234770;
+
+  .quickLinks {
+    color: white;
+    height: 100%;
+    margin-left: 150px;
+    margin-top: 1em;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .social {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+
+    p {
+      margin: 0;
+      margin-top: 0.4em;
+    }
+  }
+}
