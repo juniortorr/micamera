@@ -169,14 +169,96 @@ p {
 }
 
 .header {
+  position: relative;
   height: 75vh;
   background: url(/imgs/fall-eb.jpg);
   background-size: cover;
   background-position: 0px -175px;
   max-width: 100%;
+  text-align: center;
+  padding-bottom: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.header p {
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 200px;
+  width: 35%;
   text-align: center;
+  background-color: #D4E1F0;
+  z-index: 2;
+  margin: -100px auto 0 auto;
+  font-size: 3em;
+}
+
+.packages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 170vh;
+  width: 60%;
+  margin: 5em auto;
+}
+
+.packages .packageDetail {
+  height: 43%;
+  width: 43%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.packages .packageDetail .txt {
+  height: 70%;
+}
+
+.packages .packageDetail p {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.packages .packageDetail h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0;
+}
+
+.packages .packageDetail button {
+  background-color: white;
+  height: 12%;
+  border: solid 2px #5c88bc;
+}
+
+.packages .packageDetail a {
+  text-decoration: none;
+  color: #5c88bc;
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=services.css.map */
