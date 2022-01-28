@@ -56,10 +56,20 @@ h1 {
   border: 2px solid white;
   color: white;
   background-color: #5c88bc;
+  transition: all 0.25s;
 
   a {
     text-decoration: none;
     color: white;
+  }
+}
+
+.homeBtn:hover {
+  background-color: white;
+  transform: translateY(-0.25em);
+
+  a {
+    color: #5c88bc;
   }
 }
 
