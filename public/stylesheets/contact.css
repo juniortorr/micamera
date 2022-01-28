@@ -167,8 +167,7 @@ body {
 
 body h1 {
   text-align: center;
-  margin-top: 5%;
-  margin-bottom: 0.25%;
+  margin: 5% auto .5%;
   font-size: 3.5rem;
   color: #343a40;
 }
@@ -192,7 +191,8 @@ body .subheading-linebreak {
 .main-paragraph {
   text-align: center;
   font-size: 1.5rem;
-  margin: 2em 14em;
+  margin: 1.5em auto;
+  padding: 0 14em;
   color: #495057;
 }
 
