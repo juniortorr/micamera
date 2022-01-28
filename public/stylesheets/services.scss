@@ -12,15 +12,70 @@ body {
 p {
   margin: 0;
 }
-
+//Hero Image & Service Box 
 .header {
+  position: relative;
   height: 75vh;
   background: url(/imgs/fall-eb.jpg);
   background-size: cover;
   background-position: 0px -175px;
   max-width: 100%;
+  text-align: center;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+}
 
-  p {
-    text-align: center;
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 200px;
+  width: 35%;
+  text-align: center;
+  background-color: #D4E1F0;
+  z-index: 2;
+  margin: -100px auto 0 auto; 
+  font-size: 3em;
+}
+
+// End Hero & Services Box // Begin Packages
+.packages {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 170vh;
+  width: 60%;
+  margin: 5em auto;
+  .packageDetail {
+    height: 43%;
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    .txt {
+      height: 70%;
+    }
+    p {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+    h1 {
+      align-self: center;
+      margin: 0;
+    }
+    button {
+      background-color: white;
+      height: 12%;
+      border: solid 2px #5c88bc;
+    }
+    a {
+      text-decoration: none;
+      color: #5c88bc;
+      font-size: 1.2rem;
+    }
   }
 }
