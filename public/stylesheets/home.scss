@@ -78,7 +78,7 @@ h1 {
 // Section 2 (Styles of Photography//
 
 .section2 {
-  height: 100vh;
+  height: 120vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,7 +132,6 @@ h1 {
 // About Me Section //
 
 .aboutMe {
-  margin-top: 200px;
   height: 100vh;
   background-color: rgba(109, 153, 206, 0.3);
   display: flex;
@@ -142,7 +141,7 @@ h1 {
 
   
   .aboutMeTxt {
-    height: 90%;
+    height: 75%;
     width: 36%;
     margin-right: 5%;
     font-weight: 600;
@@ -172,7 +171,7 @@ h1 {
     .aboutMeBtn {
       display: flex;
       justify-content: flex-end;
-      height: 18%;
+
     }
       
   
