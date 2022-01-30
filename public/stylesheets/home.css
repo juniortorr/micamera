@@ -200,8 +200,9 @@ h1 {
   background-color: lightblue;
   text-align: center;
   margin: 0;
-  background: url(/imgs/beach-walking.jpg);
+  background: url(/imgs/beach-walking.jpg) no-repeat center center fixed;
   background-size: cover;
+  width: 100%;
   max-width: 100%;
 }
 
@@ -273,6 +274,7 @@ h1 {
   font-size: 3rem;
   font-weight: 500;
   color: Black;
+  height: 8%;
 }
 
 .section2 .section2Imgs {
@@ -283,6 +285,7 @@ h1 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 70%;
+  height: 55%;
 }
 
 .section2 img {
@@ -365,6 +368,13 @@ h1 {
 }
 
 .aboutMe .aboutMeTxt .aboutMePara {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 70%;
 }
 
@@ -373,6 +383,10 @@ h1 {
   color: #383838;
   margin: 0;
   margin-top: .7em;
+}
+
+.aboutMe .aboutMeTxt .p2 {
+  margin: 0;
 }
 
 .aboutMe .aboutMeTxt .aboutMeBtn {
@@ -428,7 +442,8 @@ h1 {
 }
 
 .aboutMe .aboutMeTxt p {
-  font-size: 1.5rem;
+  height: 40%;
+  font-size: 130%;
   line-height: 180%;
   font-weight: 100;
 }

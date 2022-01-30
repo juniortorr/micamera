@@ -26,8 +26,12 @@ h1 {
   background-color: lightblue;
   text-align: center;
   margin: 0;
-  background: url(/imgs/beach-walking.jpg);
-  background-size: cover;
+    background: url(/imgs/beach-walking.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  width: 100%;
   max-width: 100%;
   a {
     text-decoration: none;
@@ -89,12 +93,14 @@ h1 {
     font-size: 3rem;
     font-weight: 500;
     color: Black;
+    height: 8%;
   }
 
   .section2Imgs {
     display: flex;
     justify-content: space-between;
     width: 70%;
+    height: 55%;
   }
   img {
     margin: 1em;
@@ -158,6 +164,8 @@ h1 {
     }
 
     .aboutMePara {
+      display: flex;
+      flex-direction: column;
       height: 70%;
     }
 
@@ -166,6 +174,10 @@ h1 {
       color: #383838;
       margin: 0;
       margin-top: .7em;
+    }
+
+    .p2 {
+      margin: 0;
     }
 
     .aboutMeBtn {
@@ -223,7 +235,8 @@ h1 {
     }
 
     p {
-      font-size: 1.5rem;
+      height: 40%;
+      font-size: 130%;
       line-height: 180%;
       font-weight: 100;
     }
