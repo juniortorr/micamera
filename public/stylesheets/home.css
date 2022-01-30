@@ -254,7 +254,7 @@ h1 {
 }
 
 .section2 {
-  height: 100vh;
+  height: 120vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -325,7 +325,6 @@ h1 {
 }
 
 .aboutMe {
-  margin-top: 200px;
   height: 100vh;
   background-color: rgba(109, 153, 206, 0.3);
   display: -webkit-box;
@@ -340,7 +339,7 @@ h1 {
 }
 
 .aboutMe .aboutMeTxt {
-  height: 90%;
+  height: 75%;
   width: 36%;
   margin-right: 5%;
   font-weight: 600;
@@ -383,7 +382,6 @@ h1 {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  height: 18%;
 }
 
 .aboutMe .aboutMeTxt a {
