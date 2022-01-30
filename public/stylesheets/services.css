@@ -184,7 +184,7 @@ p {
 .header {
   position: relative;
   height: 75vh;
-  background: url(/imgs/fall-eb.jpg);
+  background: url(/imgs/fall-eb.jpg) no-repeat;
   background-size: cover;
   background-position: 0px -175px;
   max-width: 100%;
