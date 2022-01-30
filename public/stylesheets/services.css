@@ -205,12 +205,12 @@ p {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  height: 200px;
-  width: 35%;
+  height: 3em;
+  width: 25%;
   text-align: center;
   background-color: #D4E1F0;
   z-index: 2;
-  margin: -100px auto 0 auto;
+  margin: -90px auto 0 auto;
   font-size: 3em;
 }
 
@@ -223,13 +223,13 @@ p {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 140vh;
+  height: 130vh;
   width: 60%;
   margin: 5em auto;
 }
 
 .packages .packageDetail {
-  height: 43%;
+  height: 38%;
   width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
