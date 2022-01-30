@@ -325,50 +325,50 @@ h1 {
 }
 
 .aboutMe {
+  margin-top: 200px;
   height: 100vh;
   background-color: rgba(109, 153, 206, 0.3);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .aboutMe .aboutMeTxt {
-  height: 80%;
+  height: 90%;
   width: 36%;
   margin-right: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   font-weight: 600;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
+  position: relative;
 }
 
 .aboutMe .aboutMeTxt .p {
+  height: 25%;
   font-weight: 400;
   color: #383838;
-  margin-bottom: 0;
+  margin: 0;
+  margin-top: .5em;
 }
 
 .aboutMe .aboutMeTxt a {
   -ms-flex-item-align: end;
       align-self: flex-end;
+  justify-self: flex-end;
 }
 
 .aboutMe .aboutMeTxt button {
   margin-top: 20px;
   cursor: pointer;
   display: block;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
   width: 17em;
   padding: 0.75em 0.75em;
   font-size: 1.2rem;
@@ -377,8 +377,6 @@ h1 {
   background-color: #234770f1;
   color: white;
   border-radius: 5px;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
 }
 
 .aboutMe .aboutMeTxt button:hover {
