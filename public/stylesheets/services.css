@@ -208,7 +208,7 @@ p {
   height: 3em;
   width: 25%;
   text-align: center;
-  background-color: #D4E1F0;
+  background-color: #d4e1f0;
   z-index: 2;
   margin: -90px auto 0 auto;
   font-size: 3em;
@@ -229,7 +229,7 @@ p {
 }
 
 .packages .packageDetail {
-  height: 38%;
+  height: 42%;
   width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -276,8 +276,8 @@ p {
 .packages .packageDetail button:hover {
   background-color: #5c88bc;
   color: white;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .packages .packageDetail a {

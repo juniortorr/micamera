@@ -183,7 +183,7 @@ p {
 .content {
   height: 120vh;
   background-color: rgba(212, 225, 240, 0.6);
-  margin-top: 100px;
+  margin-top: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -212,8 +212,13 @@ p {
   margin-right: 50px;
 }
 
+.content .text .about-me-paras {
+  margin-top: 2rem;
+}
+
 .content .text p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.25em;
 }
 
 .content .text h1 {
@@ -262,8 +267,8 @@ p {
   background-color: white;
   color: #234770f1;
   border: 2px solid #234770f1;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .content .line {

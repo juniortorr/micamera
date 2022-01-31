@@ -12,7 +12,7 @@ body {
 p {
   margin: 0;
 }
-//Hero Image & Service Box 
+//Hero Image & Service Box
 .header {
   position: relative;
   height: 75vh;
@@ -33,9 +33,9 @@ p {
   height: 3em;
   width: 25%;
   text-align: center;
-  background-color: #D4E1F0;
+  background-color: #d4e1f0;
   z-index: 2;
-  margin: -90px auto 0 auto; 
+  margin: -90px auto 0 auto;
   font-size: 3em;
 }
 
@@ -47,8 +47,9 @@ p {
   height: 130vh;
   width: 60%;
   margin: 5em auto;
+
   .packageDetail {
-    height: 38%;
+    height: 42%;
     width: 45%;
     display: flex;
     flex-direction: column;
@@ -79,7 +80,7 @@ p {
     button:hover {
       background-color: #5c88bc;
       color: white;
-      transition: .3s;
+      transition: 0.3s;
     }
     a {
       align-self: center;
