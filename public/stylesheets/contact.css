@@ -243,8 +243,9 @@ svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -258,7 +259,7 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  width: 45%;
   height: 80%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -267,6 +268,14 @@ svg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-form .column .input-element {
+  width: 100%;
+  height: 30%;
 }
 
 form .input-element {
@@ -281,8 +290,8 @@ form label {
 }
 
 form input {
-  width: 85%;
-  height: 60%;
+  width: 75%;
+  height: 45%;
   border: 4px double #495057;
   border-radius: 5px;
   color: #343a40;
@@ -309,9 +318,9 @@ form input {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0;
 }
 
