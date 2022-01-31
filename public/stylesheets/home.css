@@ -200,7 +200,7 @@ h1 {
   background-color: lightblue;
   text-align: center;
   margin: 0;
-  background: url(/imgs/beach-walking.jpg) no-repeat center center fixed;
+  background: url(/imgs/beach-walking.jpg) no-repeat;
   background-size: cover;
   width: 100%;
   max-width: 100%;
