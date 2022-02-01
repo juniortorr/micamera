@@ -72,14 +72,14 @@
         width: 100%;
         height: 100%;
         border-radius: 5px;
-        color:white;  
+        color: white;
         background-color: #234770f1;
         border: 2px solid white;
-      } 
+      }
       button:hover {
         background-color: white;
         color: black;
-        transition: .2s;
+        transition: 0.2s;
         cursor: pointer;
       }
     }
@@ -97,6 +97,17 @@
 
     a:hover {
       color: white;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    .btn {
+      width: 45%;
+      button {
+        font-size: 0.5em;
+      }
     }
   }
 }
