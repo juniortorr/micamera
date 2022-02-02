@@ -130,11 +130,27 @@
 }
 
 @media (max-width: 1200px) {
-  .navbar .btn {
-    width: 45%;
+  .navbar .nav-li {
+    margin: 1em;
   }
-  .navbar .btn button {
-    font-size: 0.5em;
+  .navbar .btn a button {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar .home-img {
+    width: 22%;
+    margin-left: 20px;
+  }
+  .navbar ul {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 1em;
+  }
+  .navbar .btn a {
+    width: 70%;
   }
 }
 
@@ -142,7 +158,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 15em;
+  margin-top: 15rem;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -209,7 +225,7 @@ body .heading {
 body h1 {
   text-align: center;
   margin-bottom: 1%;
-  margin-top: 0;
+  margin-top: 0.5em;
   font-size: 3.7rem;
   color: #343a40;
 }
@@ -241,7 +257,9 @@ body .subheading-linebreak {
 }
 
 svg {
-  margin-top: 4em;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  min-height: 4em;
 }
 
 .contact-form {
@@ -258,7 +276,7 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #D4E1F0;
+  background-color: #d4e1f0;
   width: 100vw;
   height: 50vh;
   padding: 3em 0;
@@ -268,8 +286,8 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 45%;
-  height: 90%;
+  width: 50%;
+  height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -280,15 +298,12 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 4rem;
 }
 
 .contact-form .column .input-element {
   width: 100%;
-  height: 30%;
-}
-
-form .input-element {
-  padding: 0 4em;
+  height: 33%;
 }
 
 form label {
@@ -299,7 +314,7 @@ form label {
 }
 
 form input {
-  width: 75%;
+  width: 100%;
   height: 45%;
   border: 4px double #495057;
   border-radius: 5px;
@@ -308,11 +323,12 @@ form input {
 
 .package-select select {
   width: 50%;
-  height: 60%;
+  height: 55%;
   border: 4px double #495057;
   border-radius: 5px;
   font-size: 15px;
   color: #343a40;
+  background-color: white;
 }
 
 .notes-box input {
@@ -327,10 +343,12 @@ form input {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .send-button button {
@@ -343,6 +361,7 @@ form input {
   font-size: 1rem;
   font-family: sans-serif;
   color: white;
+  margin-top: 1.25em;
 }
 
 .send-button button:hover {
@@ -350,7 +369,62 @@ form input {
   color: #234770f1;
   -webkit-box-shadow: 5px 5px 5px #343a40;
           box-shadow: 5px 5px 5px #343a40;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+@media (max-width: 1200px) {
+  .main-paragraph {
+    margin-top: 0;
+  }
+  .contact-form {
+    padding: 3em 0;
+  }
+  .contact-form .column {
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .heading h1 {
+    font-size: 3rem;
+  }
+  .main-paragraph {
+    font-size: 1.3rem;
+    width: 65%;
+  }
+  svg {
+    max-height: 4em;
+    margin-bottom: 1em;
+  }
+  form input {
+    height: 30%;
+  }
+  .package-select select {
+    height: 40%;
+    width: 60%;
+  }
+  .notes-box input {
+    height: 4em;
+  }
+  .send-button button {
+    margin-top: 0.75em;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    margin-top: 0;
+  }
+  .heading h1 {
+    margin-top: 0;
+  }
+  .main-paragraph {
+    font-size: 1.2em;
+    width: 80%;
+  }
+  svg {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=contact.css.map */

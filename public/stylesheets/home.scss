@@ -8,7 +8,6 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
- 
 }
 
 h1 {
@@ -26,11 +25,11 @@ h1 {
   background-color: lightblue;
   text-align: center;
   margin: 0;
-    background: url(/imgs/beach-walking.jpg) no-repeat ; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  background: url(/imgs/beach-walking.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   width: 100%;
   max-width: 100%;
   a {
@@ -43,7 +42,6 @@ h1 {
   margin-top: 3em;
   font-size: 1.7rem;
   color: white;
-  
 }
 
 .subheading {
@@ -71,12 +69,12 @@ h1 {
 
 .homeBtn:hover {
   background-color: white;
-  transform: translateY(-0.25em); 
+  transform: translateY(-0.25em);
   cursor: pointer;
 
   a {
     color: #5c88bc;
-    transition: .2s;
+    transition: 0.2s;
   }
 }
 
@@ -126,7 +124,7 @@ h1 {
     button:hover {
       background-color: #5c88bc;
       color: white;
-      transition: .2s;
+      transition: 0.2s;
     }
     a {
       margin: 1em;
@@ -145,8 +143,6 @@ h1 {
   justify-content: space-evenly;
   align-items: center;
 
-
-  
   .aboutMeTxt {
     height: 75%;
     width: 36%;
@@ -154,10 +150,10 @@ h1 {
     font-weight: 600;
     text-align: center;
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     justify-content: space-between;
 
-    .headings{
+    .headings {
       line-height: 4rem;
       h2 {
         margin: 0;
@@ -174,8 +170,7 @@ h1 {
       font-weight: 400;
       color: #383838;
       margin: 0;
-      margin-top: .7em;
-
+      margin-top: 0.7em;
     }
 
     .p2 {
@@ -185,13 +180,11 @@ h1 {
     .aboutMeBtn {
       display: flex;
       justify-content: flex-end;
-
     }
-      
-  
+
     a {
       align-self: flex-start;
-      justify-self: flex-end
+      justify-self: flex-end;
     }
 
     button {
@@ -216,9 +209,8 @@ h1 {
     button:hover {
       background-color: white;
       color: #234770f1;
-      transition: .2s;
+      transition: 0.2s;
     }
-
 
     h1 {
       width: 100%;
@@ -328,3 +320,5 @@ h1 {
 }
 
 //End Testimonials
+
+// Start Media Queries
