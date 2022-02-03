@@ -61,6 +61,7 @@
     align-items: center;
     justify-content: flex-end;
     width: 20%;
+    min-width: 120px;
 
     a {
       width: 50%;
@@ -97,6 +98,19 @@
 
     a:hover {
       color: white;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    .btn {
+      width: 45%;
+      a {
+        button {
+          font-size: .75rem;
+        }
+      }
     }
   }
 }
