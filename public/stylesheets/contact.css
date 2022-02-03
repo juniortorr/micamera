@@ -88,6 +88,7 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 20%;
+  min-width: 120px;
 }
 
 .navbar .btn a {
@@ -127,6 +128,15 @@
 
 .navbar ul a:hover {
   color: white;
+}
+
+@media (max-width: 1200px) {
+  .navbar .btn {
+    width: 45%;
+  }
+  .navbar .btn a button {
+    font-size: .75rem;
+  }
 }
 
 footer {
