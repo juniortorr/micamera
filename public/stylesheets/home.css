@@ -111,8 +111,8 @@
 .navbar .btn a button:hover {
   background-color: white;
   color: black;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   cursor: pointer;
 }
 
@@ -131,11 +131,29 @@
 }
 
 @media (max-width: 1200px) {
-  .navbar .btn {
-    width: 45%;
+
+  .navbar .nav-li {
+    margin: 1em;
   }
   .navbar .btn a button {
-    font-size: .75rem;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar .home-img {
+    width: 22%;
+    margin-left: 20px;
+  }
+  .navbar ul {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 1em;
+  }
+  .navbar .btn a {
+    width: 70%;
+
   }
 }
 
@@ -143,7 +161,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 15em;
+  margin-top: 15rem;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -260,8 +278,8 @@ h1 {
 
 .homeBtn:hover a {
   color: #5c88bc;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .section2 {
@@ -327,8 +345,8 @@ h1 {
 .section2 .section2Btns button:hover {
   background-color: #5c88bc;
   color: white;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .section2 .section2Btns a {
@@ -392,7 +410,7 @@ h1 {
   font-weight: 400;
   color: #383838;
   margin: 0;
-  margin-top: .7em;
+  margin-top: 0.7em;
 }
 
 .aboutMe .aboutMeTxt .p2 {
@@ -431,8 +449,8 @@ h1 {
 .aboutMe .aboutMeTxt button:hover {
   background-color: white;
   color: #234770f1;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .aboutMe .aboutMeTxt h1 {
