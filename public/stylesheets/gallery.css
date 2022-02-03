@@ -161,7 +161,8 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 15rem;
+  margin-top: 8em;
+
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;

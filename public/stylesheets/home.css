@@ -161,7 +161,8 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 15rem;
+  margin-top: 8em;
+
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -498,7 +499,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  height: 115vh;
   margin: 0;
 }
 
@@ -580,14 +581,5 @@ h1 {
 
 .section3 .testimonials img {
   width: 45%;
-}
-
-@media (max-width: 1200px) {
-  .btn {
-    width: 45%;
-  }
-  .btn button {
-    font-size: .5px;
-  }
 }
 /*# sourceMappingURL=home.css.map */
