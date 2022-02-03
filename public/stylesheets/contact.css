@@ -454,18 +454,106 @@ form input {
 }
 
 @media (max-width: 768px) {
-  .heading {
-    margin-top: 0;
+  body .heading {
+    padding: 0;
+    height: 50vh;
   }
-  .heading h1 {
-    margin-top: 0;
+  body .heading .subheading {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
   }
-  .main-paragraph {
-    font-size: 1.2em;
+  body .heading .main-paragraph {
+    font-size: 1.1em;
+    width: 80%;
+    margin-bottom: 0;
+  }
+  body .heading svg {
+    margin-bottom: 20px;
+  }
+  .contact-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 70vh;
+  }
+  .contact-form .column {
     width: 80%;
   }
-  svg {
-    margin: 0;
+  .contact-form .column .input-element {
+    margin: 0.5rem;
+  }
+  form label {
+    margin-bottom: 0.3em;
+  }
+  form input {
+    height: 40%;
+  }
+  .package-select select {
+    height: 55%;
+    width: 45%;
+  }
+  .send-button button {
+    margin-top: 1em;
+  }
+}
+
+@media (max-width: 576px) {
+  body .heading {
+    height: 50vh;
+    margin: 10% 0;
+  }
+  body .heading h1 {
+    margin-top: 15%;
+  }
+  body .heading .subheading {
+    margin-bottom: 15px;
+  }
+  body .heading .main-paragraph {
+    font-size: 1.2em;
+    width: 85%;
+    margin-top: 5px;
+  }
+  body .heading svg {
+    margin: 1.5em 0;
+  }
+  .contact-form {
+    height: 100vh;
+  }
+  .contact-form .column {
+    width: 85%;
+  }
+  .send-button button {
+    width: 75%;
+    height: 55%;
+  }
+}
+
+@media (max-width: 480px) {
+  body .heading {
+    height: 60vh;
+    margin: 10% 0;
+  }
+  body .heading h1 {
+    margin-top: 20%;
+    font-size: 3.2rem;
+  }
+  body .heading .subheading {
+    font-size: 1.4em;
+  }
+  body .heading .main-paragraph {
+    width: 90%;
+  }
+  .contact-form .column {
+    width: 92%;
+  }
+  .package-select select {
+    width: 100%;
+  }
+  .send-button button {
+    height: 70%;
+    width: 80%;
+    font-size: 1.3rem;
   }
 }
 /*# sourceMappingURL=contact.css.map */
