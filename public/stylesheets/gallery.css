@@ -88,6 +88,7 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 20%;
+  min-width: 120px;
 }
 
 .navbar .btn a {
@@ -130,6 +131,7 @@
 }
 
 @media (max-width: 1200px) {
+
   .navbar .nav-li {
     margin: 1em;
   }
@@ -151,6 +153,7 @@
   }
   .navbar .btn a {
     width: 70%;
+
   }
 }
 
@@ -226,6 +229,8 @@ body {
   height: 155vh;
   margin: auto;
   margin-top: 125px;
+  max-width: 1200px;
+  max-height: 1200px;
 }
 
 .container img {

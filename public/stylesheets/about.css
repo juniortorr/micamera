@@ -88,6 +88,7 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 20%;
+  min-width: 120px;
 }
 
 .navbar .btn a {
@@ -130,6 +131,7 @@
 }
 
 @media (max-width: 1200px) {
+
   .navbar .nav-li {
     margin: 1em;
   }

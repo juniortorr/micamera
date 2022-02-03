@@ -88,6 +88,7 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 20%;
+  min-width: 120px;
 }
 
 .navbar .btn a {
@@ -130,6 +131,7 @@
 }
 
 @media (max-width: 1200px) {
+
   .navbar .nav-li {
     margin: 1em;
   }
@@ -151,6 +153,7 @@
   }
   .navbar .btn a {
     width: 70%;
+
   }
 }
 
@@ -577,5 +580,14 @@ h1 {
 
 .section3 .testimonials img {
   width: 45%;
+}
+
+@media (max-width: 1200px) {
+  .btn {
+    width: 45%;
+  }
+  .btn button {
+    font-size: .5px;
+  }
 }
 /*# sourceMappingURL=home.css.map */

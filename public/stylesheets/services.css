@@ -88,6 +88,7 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 20%;
+  min-width: 120px;
 }
 
 .navbar .btn a {
@@ -151,6 +152,7 @@
   }
   .navbar .btn a {
     width: 70%;
+
   }
 }
 
@@ -199,6 +201,7 @@ html {
 }
 
 body {
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
 }
 
@@ -214,7 +217,6 @@ p {
   background-position: 0px -175px;
   max-width: 100%;
   text-align: center;
-  padding-bottom: 100px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -229,14 +231,15 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
+  position: absolute;
+  bottom: -50px;
+  left: 38%;
   height: 3em;
   width: 25%;
   text-align: center;
   background-color: #d4e1f0;
   z-index: 2;
-  margin: -90px auto 0 auto;
-  font-size: 3em;
+  font-size: 3rem;
 }
 
 .packages {
@@ -251,10 +254,11 @@ p {
   height: 130vh;
   width: 60%;
   margin: 5em auto;
+  max-width: 900px;
 }
 
 .packages .packageDetail {
-  height: 42%;
+  height: 48%;
   width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -266,18 +270,18 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 50px;
+  padding: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid black;
 }
 
 .packages .packageDetail .txt {
-  height: 70%;
+  height: 60%;
 }
 
 .packages .packageDetail p {
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin-bottom: 10px;
 }
 
@@ -312,5 +316,57 @@ p {
   text-decoration: none;
   height: 12%;
   width: 90%;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    background-position: 0 0;
+  }
+  .services {
+    font-size: 2rem;
+    margin-top: -50px;
+  }
+  .packages .txt {
+    font-size: .9rem;
+    margin-top: 20px;
+  }
+  .packages h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 996px) {
+  .services {
+    margin-top: -90px;
+  }
+  .packages {
+    width: 75%;
+  }
+  .packages .txt {
+    font-size: .8rem;
+    margin-top: 0;
+  }
+  .packages h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    width: 40%;
+    left: 30%;
+  }
+  .packages {
+    width: 85%;
+  }
+  .packages .packageDetail {
+    width: 47%;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    background-position: center;
+  }
 }
 /*# sourceMappingURL=services.css.map */

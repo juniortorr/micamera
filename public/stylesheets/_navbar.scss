@@ -61,6 +61,7 @@
     align-items: center;
     justify-content: flex-end;
     width: 20%;
+    min-width: 120px;
 
     a {
       width: 50%;
@@ -103,6 +104,7 @@
 
 @media (max-width: 1200px) {
   .navbar {
+
     .nav-li {
       margin: 1em;
     }
@@ -111,10 +113,12 @@
       a {
         button {
           font-size: 0.9em;
+
         }
       }
     }
   }
+
 }
 
 @media (max-width: 992px) {
@@ -136,3 +140,4 @@
     }
   }
 }
+
