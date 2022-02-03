@@ -6,6 +6,7 @@ html {
 }
 
 body {
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
 }
 
@@ -21,7 +22,7 @@ p {
   background-position: 0px -175px;
   max-width: 100%;
   text-align: center;
-  padding-bottom: 100px;
+  // padding-bottom: 100px;
   box-sizing: border-box;
 }
 
@@ -29,14 +30,16 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: absolute;
+  bottom: -50px;
+  left: 38%;
   height: 3em;
   width: 25%;
   text-align: center;
   background-color: #d4e1f0;
   z-index: 2;
-  margin: -90px auto 0 auto;
-  font-size: 3em;
+  // margin: -90px auto 0 auto;
+  font-size: 3rem;
 }
 
 // End Hero & Services Box // Begin Packages
@@ -47,21 +50,22 @@ p {
   height: 130vh;
   width: 60%;
   margin: 5em auto;
+  max-width: 900px;
 
   .packageDetail {
-    height: 42%;
+    height: 48%;
     width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 50px;
+    padding: 30px;
     box-sizing: border-box;
     border: 1px solid black;
     .txt {
-      height: 70%;
+      height: 60%;
     }
     p {
-      font-size: 1.5em;
+      font-size: 1.3em;
       margin-bottom: 10px;
     }
     h1 {
@@ -89,4 +93,95 @@ p {
       width: 90%;
     }
   }
+}
+
+@media (max-width: 1200px) {
+  .header {
+    background-position: 0 0;
+  }
+  .services {
+    font-size: 2rem; 
+    margin-top: -50px;
+  }
+  .packages{
+    .txt {
+      font-size: .9rem;
+      margin-top: 20px;
+    }
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media (max-width: 996px) {
+  .services {
+    margin-top: -90px;
+  }
+  .packages{
+    width: 75%;
+    .txt {
+      font-size: .8rem;
+      margin-top: 0;
+    }
+    h1 {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    background-position: center;
+    }
+  .services {
+    width: 40%;
+    left: 30%;
+  }
+  .packages {
+    width: 85%;
+    height: 100vh;
+    .packageDetail {
+      width: 47%;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    background-position: center;
+    }
+}
+
+@media (max-width: 500px) {
+  .packages {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100vw;
+    height: 190vh;
+    max-width: 100vw;
+    .packageDetail {
+      width: 70%;
+      height: 22%;
+      margin-bottom: 20px;
+      padding: 20px 40px;
+      position: relative;
+      border-bottom: none;
+      h1 {
+        font-size: 1.2rem;
+      }
+    .txt {
+      font-size: .8rem;
+    }
+    button {
+      position: absolute;
+      height: 15%;
+      width: 100.5%;
+      left: 0;
+      bottom: 0;
+    }
+    }
+  }
+
 }

@@ -13,28 +13,27 @@
   box-shadow: 0px 5px 5px 3px rgba(63, 70, 71, 0.589);
 
   .options {
-    width: 100%;
+    width: 97%;
     display: flex;
     justify-content: space-between;
     margin: 0;
   }
 
   .home-img {
-    width: 20%;
-    align-self: flex-start;
-    margin-left: 30px;
-    margin-top: 2px;
+    width: 55%;
+    box-sizing: border-box;
   }
 
-  .home-img img {
-    width: 100%;
+  .home-img img { 
+    margin-left: 20px;
+    width: 50%;
     align-self: flex-start;
     padding: 10px 0px;
     box-sizing: border-box;
   }
 
   ul {
-    width: 28%;
+    width: 45%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -60,16 +59,18 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 20%;
+    width: 45%;
+    height: 100%;
+    min-width: 120px;
 
     a {
-      width: 50%;
-      height: 42%;
+      width: 40%;
+      height: 2.5em;
       text-decoration: none;
       margin-right: 20px;
       button {
         font-size: 1.1rem;
-        width: 100%;
+        width: 90%;
         height: 100%;
         border-radius: 5px;
         color: white;
@@ -103,6 +104,7 @@
 
 @media (max-width: 1200px) {
   .navbar {
+
     .nav-li {
       margin: 1em;
     }
@@ -110,29 +112,60 @@
     .btn {
       a {
         button {
+          margin-top: .5em;
           font-size: 0.9em;
+
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 992px) {
+  .navbar {
+
+    ul {
+      align-self: center;
+      font-size: .9em;
+    }
+
+    .btn {
+      a {
+        button {
+          margin-top: 0;
         }
       }
     }
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .navbar {
+    flex-direction: column;
     .home-img {
-      width: 22%;
-      margin-left: 20px;
+      justify-self: flex-start;
+      align-self: flex-start;
     }
-
-    ul {
-      align-self: center;
-      font-size: 1em;
+    .hidden {
+      display: none;
     }
-
-    .btn {
-      a {
-        width: 70%;
+    .options {
+      flex-direction: column;
+      align-items: center;
+      ul {
+        flex-direction: column;
+      }
+      .btn {
+        justify-content: center;
+        a {
+          margin: 0;
+          button {
+            width: 100%;
+          }
+        }
       }
     }
   }
 }
+
