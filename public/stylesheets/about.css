@@ -111,8 +111,8 @@
 .navbar .btn a button:hover {
   background-color: white;
   color: black;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   cursor: pointer;
 }
 
@@ -131,11 +131,28 @@
 }
 
 @media (max-width: 1200px) {
-  .navbar .btn {
-    width: 45%;
+
+  .navbar .nav-li {
+    margin: 1em;
   }
   .navbar .btn a button {
-    font-size: .75rem;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar .home-img {
+    width: 22%;
+    margin-left: 20px;
+  }
+  .navbar ul {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 1em;
+  }
+  .navbar .btn a {
+    width: 70%;
   }
 }
 
@@ -143,7 +160,9 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
   margin-top: 8em;
+
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
