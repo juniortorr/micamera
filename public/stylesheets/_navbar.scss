@@ -14,6 +14,7 @@
   box-shadow: 0px 5px 5px 3px rgba(63, 70, 71, 0.589);
   box-sizing: border-box;
 
+  
   .options {
     width: 65%;
     display: flex;
@@ -70,7 +71,6 @@
     width: 44%;
     height: 100%;
     min-width: 120px;
-
     a {
       width: 35%;
       height: 60%;
@@ -163,6 +163,7 @@
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
+    justify-content: flex-start;
     overflow-y: visible;
     .icon-hidden {
       top: 28%;
@@ -176,38 +177,82 @@
       align-self: flex-start;
       img {
         min-width: 200px;
-        padding-top: 5px;
+        padding-top: 4px;
       }
     }
     .hidden {
       display: none;
     }
     .options {
+      position: relative;
       flex-direction: column;
       align-items: center;
+      justify-content: flex-end;
       width: 100%;
-      height: 600px;
+      height: 300px;
+      min-width: none;
       .nav-li  {
-        height: 30px;
+        height: 100px;
+        margin: 0px;
+
       }
-      background-color: rgba(35, 35, 35, .5);
+      background-color: rgba(35, 35, 35, .9); 
       .icon-hidden {
         display: block;
       }
       ul {
         flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 80%;
+        width: 100%;
+
+        .nav-li:hover{
+          border-bottom: none;
+          background-color: white;
+          color: black;
+          margin: 0;
+          transition: none;
+          transform: none;
+          a {
+            color: black;
+          }
+        }
+        li {
+          font-size: 1.1rem;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+    
+          
+          a {
+            width: 100%;
+            height: 100%;
+            color: white;
+            z-index: 4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+        }
       }
       .btn {
         height: 60px;
         justify-content: center;
         width: 100%;
+      
         a {
           margin: 0;
           width: 100%;
           button {
+            position: absolute;
+            bottom: 0;
+            padding: 0;
             width: 100%;
             height: 60px;
-      
+            border: none;
+            font-size: 1.0rem;
           }
         }
       }
