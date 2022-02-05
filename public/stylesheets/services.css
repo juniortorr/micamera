@@ -214,9 +214,13 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     width: 100%;
-    height: 600px;
-    background-color: rgba(35, 35, 35, 0.5);
+    height: 250px;
+    min-width: none;
+    background-color: rgba(35, 35, 35, 0.9);
   }
   .navbar .options .nav-li {
     height: 30px;
@@ -229,6 +233,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 75%;
   }
   .navbar .options .btn {
     height: 60px;
@@ -242,8 +247,11 @@
     width: 100%;
   }
   .navbar .options .btn a button {
+    padding: 0;
     width: 100%;
-    height: 60px;
+    height: 50px;
+    opacity: 1;
+    z-index: 3;
   }
 }
 

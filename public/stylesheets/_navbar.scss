@@ -185,17 +185,20 @@
     .options {
       flex-direction: column;
       align-items: center;
+      justify-content: flex-end;
       width: 100%;
-      height: 600px;
+      height: 250px;
+      min-width: none;
       .nav-li  {
         height: 30px;
       }
-      background-color: rgba(35, 35, 35, .5);
+      background-color: rgba(35, 35, 35, .9); 
       .icon-hidden {
         display: block;
       }
       ul {
         flex-direction: column;
+        height: 75%;
       }
       .btn {
         height: 60px;
@@ -205,8 +208,12 @@
           margin: 0;
           width: 100%;
           button {
+            padding: 0;
             width: 100%;
-            height: 60px;
+            height: 50px;
+            opacity: 1;
+            z-index: 3;
+            
       
           }
         }
