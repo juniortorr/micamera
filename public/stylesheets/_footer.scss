@@ -1,8 +1,6 @@
 footer {
   display: flex;
-
   margin-top: 8em;
-
   justify-content: flex-start;
   height: 18em;
   width: 100%;
@@ -11,22 +9,38 @@ footer {
   .quickLinks {
     color: white;
     height: 100%;
-    margin-left: 150px;
+    margin-left: 10em;
     margin-top: 1em;
+    width: 18%;
   }
   a {
     text-decoration: none;
     color: white;
   }
-
+  .email-link {
+    margin: 0;
+  }
   .social {
     display: flex;
-    justify-content: space-between;
-    width: 70%;
-
+    justify-content: flex-start;
     p {
-      margin: 0;
-      margin-top: 0.4em;
+      margin-left: 10px;
     }
+    img {
+      height: 24px;
+      align-self: center;
+    }
+    svg {
+      align-self: center;
+      width: 24px;
+      height: 24px;
+      min-width: 24px;
+      min-height: 24px;
+      margin: 0;
+    }
+    // p {
+    //   margin: 0;
+    //   margin-top: 0.4em;
+    // }
   }
 }

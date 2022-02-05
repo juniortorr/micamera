@@ -184,6 +184,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     overflow-y: visible;
   }
   .navbar .icon-hidden {
@@ -207,6 +210,7 @@
     display: none;
   }
   .navbar .options {
+    position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -218,12 +222,13 @@
         -ms-flex-pack: end;
             justify-content: flex-end;
     width: 100%;
-    height: 250px;
+    height: 300px;
     min-width: none;
     background-color: rgba(35, 35, 35, 0.9);
   }
   .navbar .options .nav-li {
-    height: 30px;
+    height: 100px;
+    margin: 0px;
   }
   .navbar .options .icon-hidden {
     display: block;
@@ -233,7 +238,47 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 75%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 80%;
+    width: 100%;
+  }
+  .navbar .options ul .nav-li:hover {
+    border-bottom: none;
+    background-color: white;
+    color: black;
+    margin: 0;
+    -webkit-transition: none;
+    transition: none;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .navbar .options ul .nav-li:hover a {
+    color: black;
+  }
+  .navbar .options ul li {
+    font-size: 1.1rem;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .navbar .options ul li a {
+    width: 100%;
+    height: 100%;
+    color: white;
+    z-index: 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .navbar .options .btn {
     height: 60px;
@@ -247,11 +292,13 @@
     width: 100%;
   }
   .navbar .options .btn a button {
+    position: absolute;
+    bottom: 0;
     padding: 0;
     width: 100%;
-    height: 50px;
-    opacity: 1;
-    z-index: 3;
+    height: 60px;
+    border: none;
+    font-size: 1.0rem;
   }
 }
 
@@ -278,8 +325,9 @@ footer {
 footer .quickLinks {
   color: white;
   height: 100%;
-  margin-left: 150px;
+  margin-left: 10em;
   margin-top: 1em;
+  width: 18%;
 }
 
 footer a {
@@ -287,19 +335,39 @@ footer a {
   color: white;
 }
 
+footer .email-link {
+  margin: 0;
+}
+
 footer .social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 70%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 footer .social p {
+  margin-left: 10px;
+}
+
+footer .social img {
+  height: 24px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+footer .social svg {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
   margin: 0;
-  margin-top: 0.4em;
 }
 
 html {
@@ -423,7 +491,7 @@ form label {
 
 form input {
   width: 100%;
-  height: 45%;
+  height: 35%;
   border: 4px double #495057;
   border-radius: 5px;
   color: #343a40;
@@ -431,7 +499,7 @@ form input {
 
 .package-select select {
   width: 50%;
-  height: 55%;
+  height: 40%;
   border: 4px double #495057;
   border-radius: 5px;
   font-size: 15px;
@@ -554,7 +622,7 @@ form input {
     margin-bottom: 0.3em;
   }
   form input {
-    height: 40%;
+    height: 50%;
   }
   .package-select select {
     height: 55%;
