@@ -177,7 +177,7 @@
       align-self: flex-start;
       img {
         min-width: 200px;
-        padding-top: 4px;
+        padding-top: 5px;
       }
     }
     .hidden {
@@ -241,12 +241,12 @@
         height: 60px;
         justify-content: center;
         width: 100%;
-      
         a {
           margin: 0;
           width: 100%;
-          button {
+          .nav-btn {
             position: absolute;
+            left: 0;
             bottom: 0;
             padding: 0;
             width: 100%;
