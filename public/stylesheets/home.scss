@@ -264,7 +264,7 @@ h1 {
   height: 115vh;
   // background-color: lightcoral;
   margin: 0;
-  min-height: 980px;
+  min-height: 900px;
 
   .content {
     display: flex;
@@ -296,6 +296,7 @@ h1 {
       width: 45%;
       align-items: center;
       justify-content: center;
+      min-width: 400px;
 
       .line {
         margin: 0 0 20px;
@@ -317,10 +318,12 @@ h1 {
       }
       h2 {
         font-size: 1.7rem;
+        margin-top: 0;
       }
     }
     img {
       width: 45%;
+      min-width: 600px;
     }
   }
 }
@@ -328,6 +331,18 @@ h1 {
 //End Testimonials
 
 //Start Media Queries 
+
+@media(max-width: 1550px) {
+  .section3 {
+    .content {
+      .testimonials {
+        img {
+          min-width: 500px;
+        }
+      }
+    }
+  }
+}
 
 @media(max-width: 1400px) {
   .aboutMe { 
@@ -339,4 +354,78 @@ h1 {
       }
     }
   }
+  .section3{
+    .content {
+      .testimonials {
+        p {
+          font-size: 1.3rem;
+        }
+        h2 {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
 }
+
+@media(max-width: 1285px) {
+  .section3 {
+    .content {
+      .testimonials {
+        img {
+          min-width: 400px;
+        }
+        h2 {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 1200px) {
+  .section2 {
+    min-height: 970px;
+    .section2Btns {
+      min-width: 1000px;
+      justify-content: space-between;
+      a {
+        min-width: 300px;
+      }
+      button {
+        min-width: 300px;
+      }
+    }
+    .section2Imgs {
+      min-width: 1000px;
+      min-height: 525px;
+      img {
+        min-width: 300px;
+        height: 492px;
+      }
+    }
+  }
+  .aboutMe {
+    min-width: 1000px;
+    .img {
+      min-width: 400px;
+      height: 665px;
+    }
+    .aboutMeTxt {
+      h1 {
+        font-size: 2.2rem;
+        height: 55px;
+      }
+      h2 {
+        font-size: 1.8rem;
+        height: 55px;
+      }
+      .aboutMePara {
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}
+
