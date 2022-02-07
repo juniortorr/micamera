@@ -26,10 +26,8 @@ h1 {
   text-align: center;
   margin: 0;
   background: url(/imgs/beach-walking.jpg) no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
+  background-position: center;
   width: 100%;
   max-width: 100%;
   a {
@@ -39,7 +37,6 @@ h1 {
 }
 
 .headertext {
-  margin-top: 3em;
   font-size: 1.7rem;
   color: white;
 }
@@ -86,6 +83,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   background-color: rgba(197, 219, 245, 0.1);
+  min-height: 1027px;
 
   h1 {
     margin: 1em;
@@ -100,6 +98,8 @@ h1 {
     justify-content: space-between;
     width: 70%;
     height: 55%;
+    min-width: 1180px;
+    min-height: 560px;
   }
   img {
     margin: 1em;
@@ -110,6 +110,8 @@ h1 {
     width: 70%;
     display: flex;
     justify-content: space-between;
+    min-width: 1180px;
+    min-height: 87px;
 
     button {
       cursor: pointer;
@@ -137,6 +139,8 @@ h1 {
 // About Me Section //
 
 .aboutMe {
+  min-width: 1200px;
+  min-height: 850px;
   height: 100vh;
   background-color: rgba(109, 153, 206, 0.3);
   display: flex;
@@ -230,12 +234,13 @@ h1 {
 
     p {
       height: 40%;
-      font-size: 130%;
+      font-size: 1.3rem;
       line-height: 180%;
       font-weight: 100;
     }
   }
   .img {
+    min-width: 500px;
     height: 90%;
     width: 30%;
 
@@ -259,6 +264,7 @@ h1 {
   height: 115vh;
   // background-color: lightcoral;
   margin: 0;
+  min-height: 980px;
 
   .content {
     display: flex;
@@ -321,4 +327,16 @@ h1 {
 
 //End Testimonials
 
+//Start Media Queries 
 
+@media(max-width: 1400px) {
+  .aboutMe { 
+    .aboutMeTxt{
+      .aboutMePara{
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
