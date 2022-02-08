@@ -372,6 +372,15 @@ footer .social svg {
   margin: 0;
 }
 
+@media (max-width: 998px) {
+  footer {
+    min-width: 100vw;
+  }
+  footer .quickLinks {
+    margin-left: 6em;
+  }
+}
+
 html {
   margin: 0;
 }
@@ -401,7 +410,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 80%;
-  height: 155vh;
+  height: auto;
   margin: auto;
   margin-top: 125px;
   max-width: 1200px;
@@ -410,14 +419,40 @@ body {
 
 .container img {
   width: 32.5%;
-  margin: 0;
+  height: auto;
+  margin: auto;
+  margin-bottom: 10px;
 }
 
-.container .landscape {
-  height: 24%;
+@media (max-width: 1030px) {
+  .container {
+    max-height: 2000px;
+  }
+  .container img {
+    width: 46%;
+    height: auto;
+  }
 }
 
-.container .portrait {
-  height: 50%;
+@media (max-width: 768px) {
+  .container {
+    max-height: none;
+  }
+  .container img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container img {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container img {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=gallery.css.map */
