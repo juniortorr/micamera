@@ -372,6 +372,15 @@ footer .social svg {
   margin: 0;
 }
 
+@media (max-width: 998px) {
+  footer {
+    min-width: 100vw;
+  }
+  footer .quickLinks {
+    margin-left: 6em;
+  }
+}
+
 html,
 body {
   font-family: 'Open Sans', sans-serif;

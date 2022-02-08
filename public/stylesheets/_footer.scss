@@ -45,3 +45,17 @@ footer {
     // }
   }
 }
+
+@media (max-width: 998px) {
+  footer {
+    min-width: 100vw;
+
+    .quickLinks {
+      margin-left: 6em;
+      // display: flex;
+      // flex-direction: column;
+      // flex-wrap: wrap;
+      // height: 80%;
+    }
+  }
+}
