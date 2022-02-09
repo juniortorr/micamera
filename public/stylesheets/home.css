@@ -505,8 +505,7 @@ h1 {
 
 .section2 img {
   margin: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 100%;
   display: block;
 }
 
