@@ -103,19 +103,21 @@ h1 {
   }
 
   img {
-    
-    width: 100%
+    margin: 0;
+    object-fit: cover;
+    display: block;
   }
   .imgContainer {
     height: auto;
     margin: 1em;
     width: 29%;
     position: relative;
+    box-sizing: border-box;
   }
 
   .showBtns {
     position: absolute;
-    bottom: -5px;
+    bottom: 0px;
     left: 0px;
     width: 100%;
     height: 13%;
@@ -373,6 +375,7 @@ h1 {
 @media(max-width: 1400px) {
   .aboutMe { 
     .aboutMeTxt{
+      margin-right: 0px;
       .aboutMePara{
         p {
           font-size: 1.2rem;
@@ -444,6 +447,7 @@ h1 {
       height: 665px;
     }
     .aboutMeTxt {
+      min-width: 375px;
       h1 {
         font-size: 2.2rem;
         height: 55px;
@@ -583,8 +587,8 @@ h1 {
 @media(max-width: 768px) {
   .section2 {
     min-width: 600px;
-    min-height: 1150px;
-    height: 1150px;
+    min-height: 1200px;
+    height: 1200px;
     h1 {
       font-size: 2.2rem;
     }
@@ -597,7 +601,7 @@ h1 {
       flex-wrap: wrap;
       .imgContainer {
         min-width: 180px;
-        width: 43%;
+        width: 42%;
         img {
           min-width: 180px;
           width: 100%;

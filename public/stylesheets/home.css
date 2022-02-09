@@ -504,7 +504,10 @@ h1 {
 }
 
 .section2 img {
-  width: 100%;
+  margin: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
 }
 
 .section2 .imgContainer {
@@ -512,11 +515,13 @@ h1 {
   margin: 1em;
   width: 29%;
   position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .section2 .showBtns {
   position: absolute;
-  bottom: -5px;
+  bottom: 0px;
   left: 0px;
   width: 100%;
   height: 13%;
@@ -812,6 +817,9 @@ h1 {
 }
 
 @media (max-width: 1400px) {
+  .aboutMe .aboutMeTxt {
+    margin-right: 0px;
+  }
   .aboutMe .aboutMeTxt .aboutMePara p {
     font-size: 1.2rem;
   }
@@ -869,6 +877,9 @@ h1 {
   .aboutMe .img {
     min-width: 400px;
     height: 665px;
+  }
+  .aboutMe .aboutMeTxt {
+    min-width: 375px;
   }
   .aboutMe .aboutMeTxt h1 {
     font-size: 2.2rem;
@@ -1003,8 +1014,8 @@ h1 {
 @media (max-width: 768px) {
   .section2 {
     min-width: 600px;
-    min-height: 1150px;
-    height: 1150px;
+    min-height: 1200px;
+    height: 1200px;
   }
   .section2 h1 {
     font-size: 2.2rem;
@@ -1021,7 +1032,7 @@ h1 {
   }
   .section2 .section2Imgs .imgContainer {
     min-width: 180px;
-    width: 43%;
+    width: 42%;
   }
   .section2 .section2Imgs .imgContainer img {
     min-width: 180px;
