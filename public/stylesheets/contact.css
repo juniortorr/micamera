@@ -15,7 +15,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 100vw;
   font-family: 'Open Sans', sans-serif;
   -webkit-box-shadow: 0px 5px 5px 3px rgba(63, 70, 71, 0.589);
           box-shadow: 0px 5px 5px 3px rgba(63, 70, 71, 0.589);
@@ -222,12 +222,14 @@
         -ms-flex-pack: end;
             justify-content: flex-end;
     width: 100%;
-    height: 300px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     min-width: none;
     background-color: rgba(35, 35, 35, 0.9);
   }
   .navbar .options .nav-li {
-    height: 100px;
+    height: 75px;
     margin: 0px;
   }
   .navbar .options .icon-hidden {
@@ -304,6 +306,9 @@
 }
 
 @media (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
   .navbar .home-img img {
     min-width: 200px;
     padding-top: 5px;
@@ -322,6 +327,7 @@ footer {
   width: 100%;
   background-color: #234770;
   min-height: 285px;
+  overflow-x: hidden;
 }
 
 footer .quickLinks {
@@ -383,11 +389,14 @@ footer .social svg {
 
 html {
   margin: 0;
+  overflow-x: hidden;
+  padding: env(safe-area-inset);
 }
 
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
 }
 
 body .heading {
@@ -694,12 +703,15 @@ form input {
     width: 92%;
   }
   .package-select select {
-    width: 100%;
+    width: 95%;
   }
   .send-button button {
     height: 70%;
     width: 80%;
     font-size: 1.3rem;
+  }
+  .input-element input {
+    width: 90%;
   }
 }
 /*# sourceMappingURL=contact.css.map */

@@ -15,7 +15,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 100vw;
   font-family: 'Open Sans', sans-serif;
   -webkit-box-shadow: 0px 5px 5px 3px rgba(63, 70, 71, 0.589);
           box-shadow: 0px 5px 5px 3px rgba(63, 70, 71, 0.589);
@@ -222,12 +222,14 @@
         -ms-flex-pack: end;
             justify-content: flex-end;
     width: 100%;
-    height: 300px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     min-width: none;
     background-color: rgba(35, 35, 35, 0.9);
   }
   .navbar .options .nav-li {
-    height: 100px;
+    height: 75px;
     margin: 0px;
   }
   .navbar .options .icon-hidden {
@@ -304,6 +306,9 @@
 }
 
 @media (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
   .navbar .home-img img {
     min-width: 200px;
     padding-top: 5px;
@@ -322,6 +327,7 @@ footer {
   width: 100%;
   background-color: #234770;
   min-height: 285px;
+  overflow-x: hidden;
 }
 
 footer .quickLinks {
@@ -381,6 +387,10 @@ footer .social svg {
   }
 }
 
+html {
+  padding: env(safe-area-inset);
+}
+
 html,
 body {
   font-family: 'Open Sans', sans-serif;
@@ -388,6 +398,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -531,9 +542,9 @@ h1 {
   width: 100%;
   height: 100%;
   font-size: 1.2rem;
-  background-color: transparent;
-  color: white;
-  border: white 2px solid;
+  background-color: white;
+  color: #5c88bc;
+  border: #5c88bc 2px solid;
 }
 
 .section2 .hideBtns {
@@ -900,6 +911,16 @@ h1 {
   }
 }
 
+@media (max-width: 1025px) {
+  .section2 .section2Btns a,
+  .section2 .section2Btns button {
+    min-height: 54px;
+  }
+  .section3 .content .testimonials img {
+    max-height: 250px;
+  }
+}
+
 @media (max-width: 996px) {
   .section2 {
     min-height: 650px;
@@ -916,10 +937,12 @@ h1 {
   }
   .section2 .section2Btns a {
     min-width: 220px;
+    min-height: none;
   }
   .section2 .section2Btns button {
     min-width: 220px;
     font-size: 1.1rem;
+    min-height: none;
   }
   .section2 .section2Imgs {
     min-height: 365px;
@@ -938,8 +961,11 @@ h1 {
   }
   .aboutMe {
     min-width: 700px;
-    min-height: 800px;
-    height: 800px;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    height: 600px;
+    padding: 75px 0;
   }
   .aboutMe .img {
     min-width: 325px;
@@ -959,13 +985,15 @@ h1 {
   }
   .aboutMe .aboutMeTxt h2 {
     font-size: 1.7rem;
-    height: 55px;
+    height: 65px;
   }
   .aboutMe .aboutMeTxt .aboutMePara {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    height: 400px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .aboutMe .aboutMeTxt .aboutMePara .p {
     font-size: 1.1rem;
@@ -979,9 +1007,12 @@ h1 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    justify-self: flex-end;
+    margin-top: 20px;
   }
   .aboutMe .aboutMeTxt .aboutMeBtn a {
     width: 250px;
+    justify-self: flex-end;
   }
   .aboutMe .aboutMeTxt .aboutMeBtn button {
     width: 250px;
@@ -1000,13 +1031,20 @@ h1 {
     min-width: 300px;
   }
   .section3 .content .testimonials .group {
-    min-width: 350px;
+    min-width: 300px;
   }
   .section3 .content .testimonials .group .sec3Txt {
     font-size: 1.2rem;
   }
   .section3 .content .testimonials .group .sec3para {
     font-size: 1.1rem;
+    width: 80%;
+  }
+}
+
+@media (max-width: 858px) {
+  .aboutMe .aboutMeTxt .aboutMeBtn {
+    margin-top: 40px;
   }
 }
 
@@ -1015,14 +1053,16 @@ h1 {
     min-width: 600px;
     min-height: 1200px;
     height: 1200px;
+    width: 100%;
   }
   .section2 h1 {
     font-size: 2.2rem;
+    margin-bottom: 0;
   }
   .section2 .section2Imgs {
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    min-width: 650px;
+    min-width: 600px;
     width: 100%;
     min-height: 1000px;
     height: 1000px;
@@ -1042,6 +1082,194 @@ h1 {
   }
   .section2 .section2Btns {
     display: none;
+  }
+  .aboutMe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 50px 0;
+    min-width: 575px;
+    width: 100%;
+  }
+  .aboutMe .img {
+    width: 55%;
+  }
+  .aboutMe .aboutMeTxt {
+    width: 70%;
+    height: 550px;
+  }
+  .aboutMe .aboutMeTxt .headings h2 {
+    height: 40px;
+  }
+  .aboutMe .aboutMeTxt .aboutMePara {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .aboutMe .aboutMeTxt .aboutMePara .p {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    font-size: 1rem;
+  }
+  .aboutMe .aboutMeTxt .aboutMePara .p2 {
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+  .aboutMe .aboutMeTxt .aboutMeBtn {
+    margin-top: 0px;
+  }
+  .section3 {
+    min-width: 575px;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+  }
+  .section3 .content {
+    min-width: 575px;
+    width: 100%;
+  }
+  .section3 .content .testimonials {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 475px;
+  }
+  .section3 .content .testimonials .group {
+    position: absolute;
+    top: 0;
+  }
+  .section3 .content .testimonials .group .sec3para {
+    min-width: 300px;
+  }
+  .section3 .content .testimonials img {
+    position: absolute;
+    bottom: 0;
+    min-width: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section2 {
+    min-width: 300px;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .section2 h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .section2 .section2Imgs {
+    padding: 25px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 300px;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .section2 .section2Imgs .imgContainer {
+    width: 55%;
+  }
+}
+
+@media (max-width: 576px) {
+  .aboutMe {
+    min-width: 480px;
+  }
+  .section3 {
+    min-width: 480px;
+  }
+  .section3 .content {
+    min-width: 480px;
+  }
+}
+
+@media (max-width: 480px) {
+  .headertext {
+    font-size: 1.4rem;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .section2 {
+    min-width: 200px;
+    width: 100%;
+  }
+  .section2 .section2Imgs {
+    min-width: 200px;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .section2 .section2Imgs .imgContainer {
+    width: 65%;
+  }
+  .aboutMe {
+    min-width: 200px;
+  }
+  .aboutMe .img {
+    min-width: 200px;
+    width: 65%;
+  }
+  .aboutMe .aboutMeTxt {
+    min-width: 200px;
+    width: 90%;
+    height: 575px;
+  }
+  .section3 {
+    min-width: 200px;
+    width: 100%;
+  }
+  .section3 .content {
+    min-width: 200px;
+    width: 100%;
+  }
+  .section3 .content .testimonials {
+    min-width: 200px;
+    width: 100%;
+  }
+  .section3 .content .testimonials img {
+    min-width: 200px;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=home.css.map */

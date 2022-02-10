@@ -1,11 +1,15 @@
 @import 'navbar';
 @import 'footer';
 
+html {
+  padding: env(safe-area-inset);
+}
 html,
 body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
 }
 p {
   margin: 0.7em;
@@ -19,7 +23,7 @@ p {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  max-height: 1000px;
+  max-height: 1500px;
 
   .text {
     font-weight: 300;
@@ -30,6 +34,8 @@ p {
     height: 80%;
     width: 60%;
     padding: 10px;
+    max-height: 775px;
+    max-width: 800px;
     
 
     .about-me-paras {
@@ -95,6 +101,10 @@ p {
   }
 }
 
+@media(min-width: 1400px) {
+  
+}
+
 @media(max-width: 1400px) {
   .content {
     min-height: 1000px;
@@ -110,9 +120,10 @@ p {
   }
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1025px) {
   .content {
-    min-height: 1100px;
+    min-height: fit-content;
+    height: fit-content;
     img {
       margin-bottom: 50px;
       // min-width: 350px;
@@ -133,8 +144,8 @@ p {
 @media(max-width: 768px) {
   .content {
     flex-direction: column;
-    height: fit-content;
     min-height: 1450px;
+    height: fit-content;
     img {
       margin-bottom: 0;
     }
@@ -150,14 +161,15 @@ p {
 @media(max-width: 576px) {
   .content {
     min-height: 1550px;
+    justify-content: center;
     .text {
       .aboutButtons{
-      
         align-self: center;
         width: 100%;
         align-items: center;
         margin: 0;
         margin-top: 10px;
+        max-height: none;
         button {
           width: 80%;
           text-decoration: none;
@@ -172,6 +184,7 @@ p {
 
     }
     .text {
+      max-height: none;
       h1 {
         font-size: 1.5rem;
       }
@@ -184,7 +197,18 @@ p {
 
 @media(max-width: 400px) {
   .content {
-    min-height: 1600px;
+    min-height: fit-content;
+    max-height: none;
+    height: fit-content;
+    
+  
+    .text{
+      width: 90%;
+      min-height: none;
+      max-height: none;
+      height: fit-content;
+      margin-top: 15px;
+    }
   }
 }
 

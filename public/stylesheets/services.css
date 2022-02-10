@@ -15,7 +15,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 100vw;
   font-family: 'Open Sans', sans-serif;
   -webkit-box-shadow: 0px 5px 5px 3px rgba(63, 70, 71, 0.589);
           box-shadow: 0px 5px 5px 3px rgba(63, 70, 71, 0.589);
@@ -222,12 +222,14 @@
         -ms-flex-pack: end;
             justify-content: flex-end;
     width: 100%;
-    height: 300px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     min-width: none;
     background-color: rgba(35, 35, 35, 0.9);
   }
   .navbar .options .nav-li {
-    height: 100px;
+    height: 75px;
     margin: 0px;
   }
   .navbar .options .icon-hidden {
@@ -304,6 +306,9 @@
 }
 
 @media (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
   .navbar .home-img img {
     min-width: 200px;
     padding-top: 5px;
@@ -322,6 +327,7 @@ footer {
   width: 100%;
   background-color: #234770;
   min-height: 285px;
+  overflow-x: hidden;
 }
 
 footer .quickLinks {
@@ -383,6 +389,7 @@ footer .social svg {
 
 html {
   margin: 0;
+  padding: env(safe-area-inset);
 }
 
 body {
@@ -440,6 +447,9 @@ p {
   width: 60%;
   margin: 5em auto;
   max-width: 900px;
+  min-height: 1000px;
+  max-height: 1200px;
+  margin-top: 7em;
 }
 
 .packages .packageDetail {
@@ -511,6 +521,9 @@ p {
     font-size: 2rem;
     margin-top: -50px;
   }
+  .packages {
+    min-height: 875px;
+  }
   .packages .txt {
     font-size: .9rem;
     margin-top: 20px;
@@ -539,6 +552,10 @@ p {
 }
 
 @media (max-width: 768px) {
+  body {
+    min-width: none;
+    width: 100vw;
+  }
   .header {
     background-position: center;
   }
@@ -547,6 +564,7 @@ p {
     left: 30%;
   }
   .packages {
+    min-height: 775px;
     width: 85%;
     height: 100vh;
   }
@@ -558,6 +576,9 @@ p {
 @media (max-width: 576px) {
   .header {
     background-position: center;
+  }
+  .packages {
+    min-height: 1500px;
   }
 }
 

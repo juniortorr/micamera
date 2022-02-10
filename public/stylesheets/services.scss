@@ -3,6 +3,7 @@
 
 html {
   margin: 0;
+  padding: env(safe-area-inset);
 }
 
 body {
@@ -51,6 +52,9 @@ p {
   width: 60%;
   margin: 5em auto;
   max-width: 900px;
+  min-height: 1000px;
+  max-height: 1200px;
+  margin-top: 7em;
 
   .packageDetail {
     height: 48%;
@@ -95,6 +99,7 @@ p {
   }
 }
 
+
 @media (max-width: 1200px) {
   .header {
     background-position: 0 0;
@@ -104,6 +109,7 @@ p {
     margin-top: -50px;
   }
   .packages{
+    min-height: 875px;
     .txt {
       font-size: .9rem;
       margin-top: 20px;
@@ -133,6 +139,10 @@ p {
 }
 
 @media (max-width: 768px) {
+  body {
+    min-width: none;
+    width: 100vw;
+  }
   .header {
     background-position: center;
     }
@@ -141,6 +151,7 @@ p {
     left: 30%;
   }
   .packages {
+    min-height: 775px;
     width: 85%;
     height: 100vh;
     .packageDetail {
@@ -152,6 +163,9 @@ p {
 @media (max-width: 576px) {
   .header {
     background-position: center;
+    }
+    .packages {
+      min-height: 1500px;
     }
 }
 
