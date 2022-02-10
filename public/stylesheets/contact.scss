@@ -3,11 +3,14 @@
 
 html {
   margin: 0;
+  overflow-x: hidden;
+  padding: env(safe-area-inset);
 }
 
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
 
   .heading {
     display: flex;
@@ -315,12 +318,17 @@ form {
   }
 
   .package-select select {
-    width: 100%;
+    width: 95%;
   }
 
   .send-button button {
     height: 70%;
     width: 80%;
     font-size: 1.3rem;
+  }
+  .input-element {
+    input {
+      width: 90%;
+    }
   }
 }

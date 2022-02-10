@@ -1,6 +1,9 @@
 @import 'navbar';
 @import 'footer';
 
+html {
+  padding: env(safe-area-inset);
+}
 html,
 body {
   font-family: 'Open Sans', sans-serif;
@@ -8,6 +11,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -126,9 +130,9 @@ h1 {
       width: 100%;
       height: 100%;
       font-size: 1.2rem;
-      background-color: transparent;
-      color: white;
-      border: white 2px solid;
+      background-color: white;
+      color: #5c88bc;
+      border: #5c88bc 2px solid;
     }
   }
   
@@ -479,6 +483,27 @@ h1 {
   }
 }
 
+@media(max-width: 1025px) {
+
+  .section2 {
+    .section2Btns {
+      a,
+      button {
+        min-height: 54px;
+      }
+    }
+  }
+  .section3 {
+    .content {
+      .testimonials {
+        img {
+          max-height: 250px;
+        }
+      }
+    }
+  }
+}
+
 @media(max-width: 996px) {
   .section2 {
     h1 {
@@ -491,10 +516,12 @@ h1 {
       justify-content: space-between;
       a {
         min-width: 220px;
+        min-height: none;
       }
       button {
         min-width: 220px;
         font-size: 1.1rem;
+        min-height: none;
       }
     }
     .section2Imgs {
@@ -514,8 +541,9 @@ h1 {
   }
   .aboutMe {
     min-width: 700px;
-    min-height: 800px;
-    height: 800px;
+    min-height: fit-content;
+    height: 600px;
+    padding: 75px 0;
     .img {
       min-width: 325px;
       width: 35%;
@@ -531,11 +559,11 @@ h1 {
       }
       h2 {
         font-size: 1.7rem;
-        height: 55px;
+        height: 65px;
       }
       .aboutMePara {
         justify-content: flex-start;
-        height: 400px;
+        height: fit-content;
         .p {
           font-size: 1.1rem;
           height: 180px;
@@ -545,12 +573,16 @@ h1 {
       .aboutMeBtn {
         align-items: center;
         justify-content: center;
+        justify-self: flex-end;
+        margin-top: 20px;
         a {
           width: 250px;
+          justify-self: flex-end;
         }
         button {
           width: 250px;
           font-size: 1.1rem;
+
         }
       }
     }
@@ -567,12 +599,13 @@ h1 {
           min-width: 300px;
         }
         .group {
-          min-width: 350px;
+          min-width: 300px;
         .sec3Txt {
           font-size: 1.2rem;
         }
           .sec3para {
             font-size: 1.1rem;
+            width: 80%;
           }
         }
       }
@@ -582,19 +615,30 @@ h1 {
 }
 //Left off on the section 2. Figure out how to style buttons
 //Add hover effects to those buttons
-//Do a 792 media Query for the about me text 
+@media(max-width: 858px) {
+  .aboutMe {
+    .aboutMeTxt {
+      .aboutMeBtn {
+        margin-top: 40px;
+      }
+    }
+  }
+}
 
 @media(max-width: 768px) {
   .section2 {
     min-width: 600px;
     min-height: 1200px;
     height: 1200px;
+    width: 100%;
     h1 {
+      
       font-size: 2.2rem;
+      margin-bottom: 0;
     }
     .section2Imgs {
       justify-content: space-around;
-      min-width: 650px;
+      min-width: 600px;
       width: 100%;
       min-height: 1000px;
       height: 1000px;
@@ -614,6 +658,165 @@ h1 {
 
     .section2Btns {
       display: none;
+    }
+  }
+
+  .aboutMe {
+    flex-direction: column;
+    justify-content: center;
+    min-height: fit-content;
+    height: fit-content;
+    padding: 50px 0;
+    min-width: 575px;
+    width: 100%;
+    .img {
+      width: 55%;
+    }
+    .aboutMeTxt {
+      width: 70%;
+      height: 550px;
+      .headings {
+        h2 {
+          height: 40px;
+        }
+      }
+      .aboutMePara {
+        min-height: fit-content;
+        height: fit-content;
+        
+        .p {
+          min-height: fit-content;
+        height: fit-content;
+        font-size: 1rem;
+        }
+        .p2 {
+          margin-top: 20px;
+          font-size: 1rem;
+        }
+      }
+      .aboutMeBtn {
+        margin-top: 0px;
+      }
+      
+    }
+   }
+  .section3 {
+    min-width: 575px;
+    min-height: fit-content;
+    height: fit-content;
+    width: 100%;
+    .content {
+      min-width: 575px;
+      width: 100%;
+      .testimonials {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 475px;
+        .group {
+          position: absolute;
+          top: 0;
+          .sec3para {
+            min-width: 300px;
+          }
+        }
+        img {
+          position: absolute;
+          bottom: 0;
+          min-width: 400px;
+        }
+      }
+    }
+  }  
+}
+
+@media(max-width: 600px) {
+  .section2 { 
+    min-width: 300px;
+    width: 100%;
+    height: fit-content;
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    
+    .section2Imgs {
+      padding: 25px;
+      height: fit-content;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      min-width: 300px;
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      .imgContainer {
+        width: 55%;
+      }
+    }
+  }
+}
+
+@media(max-width: 576px) {
+  .aboutMe {
+    min-width: 480px;
+  }
+  .section3 {
+    min-width: 480px;
+    .content {
+      min-width: 480px;
+    }
+  }
+}
+
+@media(max-width: 480px) {
+  .headertext {
+    font-size: 1.4rem;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .section2 {
+    min-width: 200px; 
+    width: 100%;
+    .section2Imgs {
+      min-width: 200px;
+      width: 100%;
+      padding-right: 0;
+      padding-left: 0;
+      .imgContainer {
+        width: 65%;
+      }
+    }
+  }
+  .aboutMe {
+    min-width: 200px;
+    .img {
+      min-width: 200px;
+      width: 65%;
+    }
+    .aboutMeTxt {
+      min-width: 200px;
+      width: 90%;
+      height: 575px;
+    }
+  }
+  .section3 {
+    min-width: 200px;
+    width: 100%;
+    .content {
+      min-width: 200px;
+      width: 100%;
+      .testimonials {
+        min-width: 200px;
+        width: 100%;
+          img {
+            min-width: 200px;
+            width: 100%;
+          }
+      }
     }
   }
 }
