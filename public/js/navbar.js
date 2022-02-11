@@ -1,5 +1,5 @@
 const classToggle = () => {
-    const options = document.querySelector('.options')
+    const options = document.querySelector('.options2')
     options.classList.toggle('hidden');
 }
 
