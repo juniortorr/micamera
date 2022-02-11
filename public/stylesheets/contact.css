@@ -749,6 +749,11 @@ form input {
   .contact-form .column {
     width: 85%;
   }
+  .contact-form .column .notes-box textarea {
+    font-size: 1.2rem;
+    line-height: 1em;
+    width: 90%;
+  }
   .send-button button {
     width: 75%;
     height: 55%;
