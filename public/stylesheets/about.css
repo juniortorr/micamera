@@ -573,6 +573,21 @@ p {
   width: 15%;
 }
 
+@media (min-width: 1400px) {
+  .content .text {
+    max-height: 1000px;
+    height: 80%;
+  }
+  .content .text .about-me-paras {
+    max-height: 800px;
+    height: 800px;
+  }
+  .content .text .about-me-paras .p {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}
+
 @media (max-width: 1400px) {
   .content {
     min-height: 1000px;

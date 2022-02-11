@@ -118,8 +118,14 @@ form {
   background-color: white;
 }
 
-.notes-box input {
-  height: 6em;
+.notes-box textarea {
+  height: 4em;
+  width: 100%;
+  border: 4px double #495057;
+  border-radius: 5px;
+  color: #343a40;
+  line-height: 10px;
+  font-size: 1.5rem;
 }
 
 .send-button {
@@ -159,6 +165,20 @@ form {
 
     .column {
       margin: 0 2rem;
+    }
+  }
+  .contact-form {
+    .column {
+      .input-element {
+        input {
+          font-size: 1.4rem;
+        }
+      }
+      .notes-box {
+        textarea {
+          line-height: 30px;
+        }
+      }
     }
   }
 }
@@ -328,7 +348,9 @@ form {
   }
   .input-element {
     input {
+      height: 40%;
       width: 90%;
+      font-size: 1.3rem;
     }
   }
 }
