@@ -707,6 +707,7 @@ form input {
   }
   .contact-form .column .input-element {
     margin: 0.5rem;
+    height: 30%;
   }
   form label {
     margin-bottom: 0.3em;
@@ -719,7 +720,7 @@ form input {
     width: 45%;
   }
   .send-button button {
-    margin-top: 1em;
+    margin-top: 3em;
   }
 }
 
