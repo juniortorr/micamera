@@ -592,7 +592,7 @@ form input {
   border: 4px double #495057;
   border-radius: 5px;
   color: #343a40;
-  line-height: 10px;
+  line-height: 1em;
   font-size: 1.5rem;
 }
 
@@ -648,7 +648,7 @@ form input {
     font-size: 1.4rem;
   }
   .contact-form .column .notes-box textarea {
-    line-height: 30px;
+    line-height: 2em;
   }
 }
 
