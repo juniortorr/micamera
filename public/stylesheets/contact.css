@@ -662,7 +662,6 @@ form input {
   }
   svg {
     max-height: 4em;
-    margin-bottom: 1em;
   }
   form input {
     height: 30%;
@@ -730,13 +729,14 @@ form input {
     margin: 10% 0;
   }
   body .heading h1 {
-    margin-top: 15%;
+    font-size: 2.5rem;
   }
   body .heading .subheading {
     margin-bottom: 15px;
+    font-size: 1.2rem;
   }
   body .heading .main-paragraph {
-    font-size: 1.2em;
+    font-size: 1.1em;
     width: 85%;
     margin-top: 5px;
   }
@@ -750,9 +750,13 @@ form input {
     width: 85%;
   }
   .contact-form .column .notes-box textarea {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1em;
-    width: 90%;
+    width: 100%;
+  }
+  .contact-form .column .input-element input {
+    height: 40%;
+    font-size: 1.1rem;
   }
   .send-button button {
     width: 75%;
@@ -763,11 +767,11 @@ form input {
 @media (max-width: 480px) {
   body .heading {
     height: 60vh;
-    margin: 10% 0;
+    margin: 5% 0;
   }
   body .heading h1 {
     margin-top: 20%;
-    font-size: 3.2rem;
+    font-size: 2.4rem;
   }
   body .heading .subheading {
     font-size: 1.4em;
