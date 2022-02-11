@@ -880,17 +880,109 @@ h1 {
 }
 
 @media (max-width: 1550px) {
+  .section3 {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+  .section3 .content {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
   .section3 .content .testimonials img {
     min-width: 500px;
   }
 }
 
+@media (min-width: 1400px) {
+  .section2 {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 125px;
+  }
+  .section2 .section2Imgs {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .section2 .section2Imgs .imgContainer {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .aboutMe .aboutMeTxt {
+    margin: 0;
+  }
+  .aboutMe .aboutMeTxt .aboutMePara p {
+    font-size: 1.4rem;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    max-width: 980px;
+  }
+}
+
+@media (min-width: 1800px), (min-height: 1145px) {
+  .header .headertext h1 {
+    font-size: 4.5rem;
+  }
+  .header .headertext h2 {
+    font-size: 2.5rem;
+  }
+  .header .headertext button {
+    height: 75px;
+    font-size: 1.5rem;
+  }
+  .aboutMe .aboutMeTxt .aboutMePara p {
+    font-size: 1.7rem;
+  }
+  .aboutMe .aboutMeTxt .aboutMeBtn {
+    height: 75px;
+  }
+  .aboutMe .aboutMeTxt .aboutMeBtn a {
+    height: 100%;
+  }
+  .aboutMe .aboutMeTxt .aboutMeBtn button {
+    height: 100%;
+  }
+}
+
 @media (max-width: 1400px) {
+  .section2 {
+    max-height: 1000px;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 75px;
+  }
+  .aboutMe {
+    max-height: 1000px;
+  }
   .aboutMe .aboutMeTxt {
     margin-right: 0px;
   }
   .aboutMe .aboutMeTxt .aboutMePara p {
     font-size: 1.2rem;
+  }
+  .section3 {
+    max-height: 850px;
   }
   .section3 .content .testimonials p {
     font-size: 1.3rem;
@@ -911,7 +1003,12 @@ h1 {
 
 @media (max-width: 1200px) {
   .section2 {
-    min-height: 970px;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .section2 .section2Btns {
     min-width: 1000px;
