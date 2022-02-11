@@ -365,8 +365,11 @@ h1 {
 //Start Media Queries 
 
 @media(max-width: 1550px) {
+
   .section3 {
+    min-height: fit-content;
     .content {
+      min-height: fit-content;
       .testimonials {
         img {
           min-width: 500px;
@@ -376,8 +379,75 @@ h1 {
   }
 }
 
+@media(min-width: 1400px) {
+  .section2 {
+    min-height: fit-content;
+    height: fit-content;
+    padding-bottom: 125px;
+    .section2Imgs {
+      min-height: fit-content;
+      height: fit-content;
+      .imgContainer {
+        min-height: fit-content;
+        height: fit-content;
+      }
+    }
+  }
+  .aboutMe .aboutMeTxt{
+    margin: 0;
+    .aboutMePara {
+      p {
+        font-size: 1.4rem;
+        align-self: center;
+        min-height: fit-content;
+        max-width: 980px;
+      }
+    }
+  }
+}
+@media(min-width: 1800px), (min-height: 1145px) {
+  .header {
+    .headertext {
+      h1 {
+        font-size: 4.5rem;
+      }
+      h2 {
+        font-size: 2.5rem;
+      }
+      button {
+        height: 75px;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .aboutMe .aboutMeTxt{
+    .aboutMePara {
+      p {
+        font-size: 1.7rem;
+      }
+    }
+    .aboutMeBtn {
+      height: 75px;
+      a {
+        height: 100%;
+      }
+      button {
+        height: 100%;
+      }
+    }
+  }
+}
+
 @media(max-width: 1400px) {
+  .section2 {
+    max-height: 1000px;
+    min-height: fit-content;
+    height: fit-content;
+    padding-bottom: 75px;
+  }
+  
   .aboutMe { 
+    max-height: 1000px;
     .aboutMeTxt{
       margin-right: 0px;
       .aboutMePara{
@@ -388,6 +458,7 @@ h1 {
     }
   }
   .section3{
+    max-height: 850px;
     .content {
       .testimonials {
         p {
@@ -418,7 +489,8 @@ h1 {
 
 @media(max-width: 1200px) {
   .section2 {
-    min-height: 970px;
+    min-height: fit-content;
+    height: fit-content;
     .section2Btns {
       min-width: 1000px;
       justify-content: space-between;
