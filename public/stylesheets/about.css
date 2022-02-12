@@ -176,7 +176,7 @@
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    font-size: .9em;
+    font-size: 0.9em;
   }
   .navbar .btn a {
     width: 50%;
@@ -292,8 +292,8 @@
   background-color: white;
   color: black;
   margin: 0;
-  -webkit-transition: .25s;
-  transition: .25s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
   -webkit-transform: none;
           transform: none;
 }
@@ -346,7 +346,7 @@
   width: 100%;
   height: 60px;
   border: none;
-  font-size: 1.0rem;
+  font-size: 1rem;
   background-color: #234770f1;
   color: white;
   cursor: pointer;
@@ -355,8 +355,8 @@
 .options2 .btn a .nav-btn:hover {
   background-color: white;
   color: #234770f1;
-  -webkit-transition: .25s;
-  transition: .25s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
 @media (max-width: 576px) {
@@ -378,21 +378,20 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 8em;
+  margin-top: 8rem;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  height: 18em;
+  height: 18rem;
   width: 100%;
   background-color: #234770;
   min-height: 285px;
-  overflow-x: hidden;
 }
 
 footer .quickLinks {
   color: white;
   height: 100%;
-  margin-left: 10em;
+  margin-left: 10rem;
   margin-top: 1em;
   width: 18%;
 }
@@ -437,12 +436,50 @@ footer .social svg {
   margin: 0;
 }
 
-@media (max-width: 998px) {
+@media (max-width: 992px) {
+  footer .quickLinks {
+    margin-left: 8rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  footer .quickLinks {
+    width: 25%;
+    margin-left: 5rem;
+  }
+  footer .quickLinks .pageLinks {
+    margin: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  footer .quickLinks {
+    width: 30%;
+    margin: 0;
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
   footer {
-    min-width: 100vw;
+    font-size: 0.8rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 2rem;
   }
   footer .quickLinks {
-    margin-left: 6em;
+    width: 50%;
+    padding-left: 2.5rem;
+    padding-bottom: 1.5rem;
+  }
+  footer .pageLinks {
+    margin: 0.2rem;
   }
 }
 
