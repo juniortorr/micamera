@@ -1,17 +1,16 @@
 footer {
   display: flex;
-  margin-top: 8em;
+  margin-top: 8rem;
   justify-content: flex-start;
-  height: 18em;
+  height: 18rem;
   width: 100%;
   background-color: #234770;
   min-height: 285px;
-  overflow-x: hidden;
 
   .quickLinks {
     color: white;
     height: 100%;
-    margin-left: 10em;
+    margin-left: 10rem;
     margin-top: 1em;
     width: 18%;
   }
@@ -40,23 +39,55 @@ footer {
       min-height: 24px;
       margin: 0;
     }
-    // p {
-    //   margin: 0;
-    //   margin-top: 0.4em;
-    // }
   }
 }
 
-@media (max-width: 998px) {
+@media (max-width: 992px) {
   footer {
-    min-width: 100vw;
+    .quickLinks {
+      margin-left: 8rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    .quickLinks {
+      width: 25%;
+      margin-left: 5rem;
+      .pageLinks {
+        margin: 0.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  footer {
+    .quickLinks {
+      width: 30%;
+      margin: 0;
+      padding-left: 2rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    font-size: 0.8rem;
+    height: fit-content;
+    flex-direction: column;
+    padding-bottom: 2rem;
 
     .quickLinks {
-      margin-left: 6em;
-      // display: flex;
-      // flex-direction: column;
-      // flex-wrap: wrap;
-      // height: 80%;
+      width: 50%;
+      padding-left: 2.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .pageLinks {
+      margin: 0.2rem;
     }
   }
 }
