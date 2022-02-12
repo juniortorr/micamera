@@ -500,8 +500,13 @@ p {
 }
 
 .content {
-  height: 140vh;
-  min-height: 686px;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 2em 0;
   background-color: rgba(212, 225, 240, 0.6);
   margin-top: 4rem;
   display: -webkit-box;
