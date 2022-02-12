@@ -16,8 +16,9 @@ p {
 }
 
 .content {
-  height: 140vh;
-  min-height: 686px;
+  min-height: fit-content;
+  height: fit-content;
+  padding: 2em 0;
   background-color: rgba(212, 225, 240, 0.6);
   margin-top: 4rem;
   display: flex;

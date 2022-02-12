@@ -473,7 +473,11 @@ h1 {
 }
 
 @media(max-width: 1285px) {
+  .aboutMe {
+    max-height: none;
+  }
   .section3 {
+    max-height: none;
     .content {
       .testimonials {
         img {
