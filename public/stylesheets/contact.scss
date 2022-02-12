@@ -154,6 +154,22 @@ form {
   transition: 0.2s;
 }
 
+@media(min-width: 1400px) {
+  .contact-form {
+    .column {
+      .input-element {
+        height: 25%;
+        input {
+          font-size: 1.5rem;
+        }
+        button {
+          height: 40%;
+        }
+      }
+    }
+  }
+}
+
 // Start Media Queries
 @media (max-width: 1200px) {
   .main-paragraph {
