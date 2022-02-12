@@ -993,6 +993,15 @@ h1 {
 }
 
 @media (max-width: 1285px) {
+  .aboutMe {
+    max-height: none;
+  }
+  .section2 {
+    max-height: none;
+  }
+  .section3 {
+    max-height: none;
+  }
   .section3 .content .testimonials img {
     min-width: 400px;
   }
