@@ -490,7 +490,6 @@ html {
 html,
 body {
   margin: 0;
-  overflow-x: hidden;
 }
 
 .container {
