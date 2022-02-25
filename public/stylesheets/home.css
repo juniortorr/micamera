@@ -109,7 +109,7 @@
   width: 35%;
   height: 60%;
   text-decoration: none;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
 .navbar .btn a button {
@@ -486,6 +486,7 @@ footer .social svg {
 html {
   padding: env(safe-area-inset);
   overflow-x: hidden;
+  font-size: 16px;
 }
 
 html,
@@ -532,8 +533,11 @@ h1 {
 }
 
 .headertext {
-  font-size: 1.7rem;
   color: white;
+}
+
+.headertext h1 {
+  font-size: 3.8rem;
 }
 
 .subheading {
@@ -721,8 +725,13 @@ h1 {
   line-height: 4rem;
 }
 
+.aboutMe .aboutMeTxt .headings h1 {
+  font-size: 3rem;
+}
+
 .aboutMe .aboutMeTxt .headings h2 {
   margin: 0;
+  font-size: 1.9rem;
 }
 
 .aboutMe .aboutMeTxt .aboutMePara {
@@ -741,6 +750,11 @@ h1 {
   color: #383838;
   margin: 0;
   margin-top: 0.7em;
+  margin-bottom: 1em;
+  font-size: 1.2rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .aboutMe .aboutMeTxt .p2 {
@@ -1014,9 +1028,21 @@ h1 {
   }
   .aboutMe .aboutMeTxt {
     margin-right: 0px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .aboutMe .aboutMeTxt .headings h1 {
+    font-size: 2.8rem;
+  }
+  .aboutMe .aboutMeTxt .headings h2 {
+    font-size: 1.7rem;
   }
   .aboutMe .aboutMeTxt .aboutMePara p {
     font-size: 1.2rem;
+  }
+  .aboutMe .aboutMeTxt .aboutMeBtn {
+    margin-top: 3em;
   }
   .section3 {
     max-height: 850px;
@@ -1091,7 +1117,9 @@ h1 {
     height: 665px;
   }
   .aboutMe .aboutMeTxt {
-    min-width: 375px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .aboutMe .aboutMeTxt h1 {
     font-size: 2.2rem;
@@ -1103,7 +1131,12 @@ h1 {
   }
   .aboutMe .aboutMeTxt .aboutMePara p {
     font-size: 1.1rem;
-    height: 170px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .aboutMe .aboutMeTxt .aboutMeBtn {
+    margin-top: 3em;
   }
   .section3 .content .testimonials img {
     min-width: 375px;
@@ -1124,6 +1157,9 @@ h1 {
 }
 
 @media (max-width: 996px) {
+  .header .headertext h1 {
+    font-size: 3.5rem;
+  }
   .section2 {
     min-height: 650px;
     height: 650px;
@@ -1199,7 +1235,6 @@ h1 {
   }
   .aboutMe .aboutMeTxt .aboutMePara .p {
     font-size: 1.1rem;
-    height: 180px;
     margin-top: 0;
   }
   .aboutMe .aboutMeTxt .aboutMeBtn {
@@ -1310,8 +1345,12 @@ h1 {
     width: 70%;
     height: 550px;
   }
+  .aboutMe .aboutMeTxt .headings h1 {
+    font-size: 2rem;
+  }
   .aboutMe .aboutMeTxt .headings h2 {
     height: 40px;
+    font-size: 1.3rem;
   }
   .aboutMe .aboutMeTxt .aboutMePara {
     min-height: -webkit-fit-content;
@@ -1378,6 +1417,15 @@ h1 {
 }
 
 @media (max-width: 600px) {
+  .header .headertext h1 {
+    font-size: 3rem;
+  }
+  .header .headertext .subheading {
+    font-size: 1.3rem;
+  }
+  .header .homeBtn a {
+    font-size: 1rem;
+  }
   .section2 {
     min-width: 300px;
     width: 100%;
@@ -1410,6 +1458,12 @@ h1 {
   }
   .section2 .section2Imgs .imgContainer {
     width: 55%;
+  }
+  .aboutMe .aboutMeTxt .headings h1 {
+    font-size: 2.2rem;
+  }
+  .aboutMe .aboutMeTxt .headings h2 {
+    font-size: 1.35rem;
   }
 }
 
