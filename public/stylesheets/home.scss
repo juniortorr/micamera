@@ -4,6 +4,7 @@
 html {
   padding: env(safe-area-inset);
   overflow-x: hidden;
+  font-size: 16px;
 }
 html,
 body {
@@ -41,8 +42,10 @@ h1 {
 }
 
 .headertext {
-  font-size: 1.7rem;
   color: white;
+  h1 {
+    font-size: 3.8rem;
+  }
 }
 
 .subheading {
@@ -63,6 +66,7 @@ h1 {
   transition: all 0.25s;
 
   a {
+
     text-decoration: none;
     color: white;
   }
@@ -192,8 +196,12 @@ h1 {
 
     .headings {
       line-height: 4rem;
+      h1 {
+        font-size: 3rem;
+      }
       h2 {
         margin: 0;
+        font-size: 1.9rem;
       }
     }
 
@@ -208,6 +216,9 @@ h1 {
       color: #383838;
       margin: 0;
       margin-top: 0.7em;
+      margin-bottom: 1em;
+      font-size: 1.2rem;
+      height: fit-content;
     }
 
     .p2 {
@@ -450,10 +461,22 @@ h1 {
     max-height: 1000px;
     .aboutMeTxt{
       margin-right: 0px;
+      height: fit-content;
+      .headings{
+        h1 {
+          font-size: 2.8rem;
+        }
+        h2 {
+          font-size: 1.7rem;
+        }
+      }
       .aboutMePara{
         p {
           font-size: 1.2rem;
         }
+      }
+      .aboutMeBtn {
+        margin-top: 3em;
       }
     }
   }
@@ -530,7 +553,7 @@ h1 {
       height: 665px;
     }
     .aboutMeTxt {
-      min-width: 375px;
+      height: fit-content;
       h1 {
         font-size: 2.2rem;
         height: 55px;
@@ -542,8 +565,11 @@ h1 {
       .aboutMePara {
         p {
           font-size: 1.1rem;
-          height: 170px;
+          height: fit-content;
         }
+      }
+      .aboutMeBtn {
+        margin-top: 3em;
       }
     }
   }
@@ -584,6 +610,14 @@ h1 {
 }
 
 @media(max-width: 996px) {
+  .header {
+    .headertext {
+      h1 {
+        font-size: 3.5rem;
+      }
+
+    }
+  }
   .section2 {
     h1 {
       font-size: 2.5rem;
@@ -645,7 +679,6 @@ h1 {
         height: fit-content;
         .p {
           font-size: 1.1rem;
-          height: 180px;
           margin-top: 0;
         }
       }
@@ -755,8 +788,13 @@ h1 {
       width: 70%;
       height: 550px;
       .headings {
+        h1 {
+          font-size: 2rem;
+        }
         h2 {
           height: 40px;
+          font-size: 1.3rem;
+          
         }
       }
       .aboutMePara {
@@ -811,6 +849,21 @@ h1 {
 }
 
 @media(max-width: 600px) {
+  .header {
+    .headertext {
+      h1 {
+        font-size: 3rem;
+      }
+      .subheading {
+        font-size: 1.3rem;
+      }
+    }
+    .homeBtn {
+      a {
+        font-size: 1rem;
+      }
+    }
+  }
   .section2 { 
     min-width: 300px;
     width: 100%;
@@ -833,6 +886,18 @@ h1 {
       padding-right: 0;
       .imgContainer {
         width: 55%;
+      }
+    }
+  }
+  .aboutMe {
+    .aboutMeTxt {
+      .headings {
+        h1 {
+          font-size: 2.2rem;
+        }
+        h2 {
+          font-size: 1.35rem;
+        }
       }
     }
   }
