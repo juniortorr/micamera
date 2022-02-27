@@ -145,7 +145,6 @@ h1 {
   transition: all 0.25s;
 
   a {
-
     text-decoration: none;
     color: white;
   }
@@ -219,7 +218,7 @@ h1 {
       border: #5c88bc 2px solid;
     }
   }
-  
+
   .hideBtns {
     display: block;
   }
@@ -420,11 +419,16 @@ h1 {
         text-align: center;
         margin: auto;
         width: 60%;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin: 0;
         padding: none;
         line-height: 1.5em;
+        font-weight: 400;
+        color: #383838;
         // right: 10%;
+
+        // margin-top: 0.7em;
+        // height: fit-content;
       }
       h2 {
         font-size: 1.7rem;
@@ -440,10 +444,9 @@ h1 {
 
 //End Testimonials
 
-//Start Media Queries 
+//Start Media Queries
 
-@media(max-width: 1550px) {
-
+@media (max-width: 1550px) {
   .section3 {
     min-height: fit-content;
     .content {
@@ -457,7 +460,7 @@ h1 {
   }
 }
 
-@media(min-width: 1400px) {
+@media (min-width: 1400px) {
   .section2 {
     min-height: fit-content;
     height: fit-content;
@@ -471,7 +474,7 @@ h1 {
       }
     }
   }
-  .aboutMe .aboutMeTxt{
+  .aboutMe .aboutMeTxt {
     margin: 0;
     .aboutMePara {
       p {
@@ -483,7 +486,7 @@ h1 {
     }
   }
 }
-@media(min-width: 1800px), (min-height: 1145px) {
+@media (min-width: 1800px), (min-height: 1145px) {
   .header {
     .headertext {
       h1 {
@@ -498,7 +501,7 @@ h1 {
       }
     }
   }
-  .aboutMe .aboutMeTxt{
+  .aboutMe .aboutMeTxt {
     .aboutMePara {
       p {
         font-size: 1.7rem;
@@ -516,20 +519,20 @@ h1 {
   }
 }
 
-@media(max-width: 1400px) {
+@media (max-width: 1400px) {
   .section2 {
     max-height: 1000px;
     min-height: fit-content;
     height: fit-content;
     padding-bottom: 75px;
   }
-  
-  .aboutMe { 
+
+  .aboutMe {
     max-height: 1000px;
-    .aboutMeTxt{
+    .aboutMeTxt {
       margin-right: 0px;
       height: fit-content;
-      .headings{
+      .headings {
         h1 {
           font-size: 2.8rem;
         }
@@ -537,7 +540,7 @@ h1 {
           font-size: 1.7rem;
         }
       }
-      .aboutMePara{
+      .aboutMePara {
         p {
           font-size: 1.2rem;
         }
@@ -547,7 +550,7 @@ h1 {
       }
     }
   }
-  .section3{
+  .section3 {
     max-height: 850px;
     .content {
       .testimonials {
@@ -562,7 +565,7 @@ h1 {
   }
 }
 
-@media(max-width: 1285px) {
+@media (max-width: 1285px) {
   .aboutMe {
     max-height: none;
   }
@@ -584,7 +587,7 @@ h1 {
   }
 }
 
-@media(max-width: 1200px) {
+@media (max-width: 1200px) {
   .section2 {
     min-height: fit-content;
     height: fit-content;
@@ -610,7 +613,6 @@ h1 {
           height: auto;
         }
       }
-
     }
   }
   .aboutMe {
@@ -642,23 +644,22 @@ h1 {
       }
     }
   }
-  
-    .section3 {
-      .content {
-        .testimonials {
-          img{
-            min-width: 375px;
-          }
-          p {
-            font-size: 1.2rem;
-          }
+
+  .section3 {
+    .content {
+      .testimonials {
+        img {
+          min-width: 375px;
+        }
+        p {
+          font-size: 1.2rem;
         }
       }
+    }
   }
 }
 
-@media(max-width: 1025px) {
-
+@media (max-width: 1025px) {
   .section2 {
     .section2Btns {
       a,
@@ -678,13 +679,12 @@ h1 {
   }
 }
 
-@media(max-width: 996px) {
+@media (max-width: 996px) {
   .header {
     .headertext {
       h1 {
         font-size: 3.5rem;
       }
-
     }
   }
   .section2 {
@@ -718,7 +718,6 @@ h1 {
           height: auto;
         }
       }
-
     }
   }
   .aboutMe {
@@ -766,7 +765,6 @@ h1 {
         button {
           width: 250px;
           font-size: 1.1rem;
-
         }
       }
     }
@@ -784,9 +782,11 @@ h1 {
         }
         .group {
           min-width: 300px;
-        .sec3Txt {
-            font-size: 1.3rem;
-        }
+
+          .sec3Txt {
+            font-size: 1.2rem;
+          }
+
           .sec3para {
             width: 80%;
             p {
@@ -799,11 +799,10 @@ h1 {
       }
     }
   }
-  
 }
 //Left off on the section 2. Figure out how to style buttons
 //Add hover effects to those buttons
-@media(max-width: 858px) {
+@media (max-width: 858px) {
   .aboutMe {
     .aboutMeTxt {
       .aboutMeBtn {
@@ -813,14 +812,13 @@ h1 {
   }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .section2 {
     min-width: 600px;
     min-height: 1200px;
     height: 1200px;
     width: 100%;
     h1 {
-      
       font-size: 2.2rem;
       margin-bottom: 0;
     }
@@ -842,7 +840,7 @@ h1 {
           display: block;
         }
       }
-      }
+    }
 
     .section2Btns {
       display: none;
@@ -870,17 +868,16 @@ h1 {
         h2 {
           height: 40px;
           font-size: 1.3rem;
-          
         }
       }
       .aboutMePara {
         min-height: fit-content;
         height: fit-content;
-        
+
         .p {
           min-height: fit-content;
-        height: fit-content;
-        font-size: 1rem;
+          height: fit-content;
+          font-size: 1rem;
         }
         .p2 {
           margin-top: 20px;
@@ -890,9 +887,8 @@ h1 {
       .aboutMeBtn {
         margin-top: 0px;
       }
-      
     }
-   }
+  }
   .section3 {
     min-width: 575px;
     min-height: fit-content;
@@ -921,10 +917,10 @@ h1 {
         }
       }
     }
-  }  
+  }
 }
 
-@media(max-width: 600px) {
+@media (max-width: 600px) {
   .header {
     .headertext {
       h1 {
@@ -940,7 +936,7 @@ h1 {
       }
     }
   }
-  .section2 { 
+  .section2 {
     min-width: 300px;
     width: 100%;
     height: fit-content;
@@ -949,7 +945,6 @@ h1 {
       font-size: 2rem;
     }
 
-    
     .section2Imgs {
       padding: 25px;
       height: fit-content;
@@ -979,7 +974,7 @@ h1 {
   }
 }
 
-@media(max-width: 576px) {
+@media (max-width: 576px) {
   .aboutMe {
     min-width: 480px;
   }
@@ -991,7 +986,7 @@ h1 {
   }
 }
 
-@media(max-width: 480px) {
+@media (max-width: 480px) {
   .headertext {
     font-size: 1.4rem;
   }
@@ -999,7 +994,7 @@ h1 {
     overflow-x: hidden;
   }
   .section2 {
-    min-width: 200px; 
+    min-width: 200px;
     width: 100%;
     .section2Imgs {
       min-width: 200px;
@@ -1032,10 +1027,10 @@ h1 {
       .testimonials {
         min-width: 200px;
         width: 100%;
-          img {
-            min-width: 200px;
-            width: 100%;
-          }
+        img {
+          min-width: 200px;
+          width: 100%;
+        }
       }
     }
   }

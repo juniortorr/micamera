@@ -68,13 +68,15 @@ body {
     .txt {
       height: 60%;
     }
+    h1 {
+      font-size: 2rem;
+      font-weight: 500;
+      align-self: center;
+      margin: 0;
+    }
     p {
       font-size: 1.3em;
       margin-bottom: 10px;
-    }
-    h1 {
-      align-self: center;
-      margin: 0;
     }
     button {
       background-color: white;
@@ -99,19 +101,18 @@ body {
   }
 }
 
-
 @media (max-width: 1200px) {
   .header {
     background-position: 0 0;
   }
   .services {
-    font-size: 2rem; 
+    font-size: 2rem;
     margin-top: -50px;
   }
-  .packages{
+  .packages {
     min-height: 875px;
     .txt {
-      font-size: .9rem;
+      font-size: 0.9rem;
       margin-top: 20px;
     }
     h1 {
@@ -124,12 +125,12 @@ body {
   .services {
     margin-top: -90px;
   }
-  .packages{
+  .packages {
     width: 75%;
     min-height: 700px;
     max-height: 850px;
     .txt {
-      font-size: .8rem;
+      font-size: 0.8rem;
       margin-top: 0;
     }
     h1 {
@@ -145,7 +146,7 @@ body {
   }
   .header {
     background-position: center;
-    }
+  }
   .services {
     width: 40%;
     left: 30%;
@@ -163,10 +164,10 @@ body {
 @media (max-width: 576px) {
   .header {
     background-position: center;
-    }
-    .packages {
-      min-height: 1500px;
-    }
+  }
+  .packages {
+    min-height: 1500px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -187,17 +188,16 @@ body {
       h1 {
         font-size: 1.2rem;
       }
-    .txt {
-      font-size: .8rem;
-    }
-    button {
-      position: absolute;
-      height: 15%;
-      width: 100.5%;
-      left: 0;
-      bottom: 0;
-    }
+      .txt {
+        font-size: 0.8rem;
+      }
+      button {
+        position: absolute;
+        height: 15%;
+        width: 100.5%;
+        left: 0;
+        bottom: 0;
+      }
     }
   }
-
 }
