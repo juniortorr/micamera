@@ -571,16 +571,18 @@ body {
   height: 60%;
 }
 
-.packages .packageDetail p {
-  font-size: 1.3em;
-  margin-bottom: 10px;
-}
-
 .packages .packageDetail h1 {
+  font-size: 2rem;
+  font-weight: 500;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   margin: 0;
+}
+
+.packages .packageDetail p {
+  font-size: 1.3em;
+  margin-bottom: 10px;
 }
 
 .packages .packageDetail button {
@@ -621,7 +623,7 @@ body {
     min-height: 875px;
   }
   .packages .txt {
-    font-size: .9rem;
+    font-size: 0.9rem;
     margin-top: 20px;
   }
   .packages h1 {
@@ -639,7 +641,7 @@ body {
     max-height: 850px;
   }
   .packages .txt {
-    font-size: .8rem;
+    font-size: 0.8rem;
     margin-top: 0;
   }
   .packages h1 {
@@ -705,7 +707,7 @@ body {
     font-size: 1.2rem;
   }
   .packages .packageDetail .txt {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .packages .packageDetail button {
     position: absolute;

@@ -914,10 +914,12 @@ h1 {
   text-align: center;
   margin: auto;
   width: 60%;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 0;
   padding: none;
   line-height: 1.5em;
+  font-weight: 400;
+  color: #383838;
 }
 
 .section3 .testimonials .group h2 {
