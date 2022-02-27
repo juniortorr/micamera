@@ -1,6 +1,85 @@
 @import 'navbar';
 @import 'footer';
 
+//Font Sizes
+// main heading = 3.8rem
+// subheading = 1.5rem/fontweight = 400
+
+// Section 2 (styles of photography)
+//   Heading = 3rem/fontweight = 500
+//   Button font-size = 1.2rem
+
+// About Me Section
+//   "welcome" = 3rem
+//   "I'm Micah" = 1.9rem
+//    p & button = 1.2rem 
+
+// Testimonials 
+//   p = 1.5rem
+//   h2 = 1.7rem
+
+// max width 1400px 
+  // About Me Section
+//   "welcome" = 2.8rem
+//   "I'm Micah" = 1.7rem
+//    p & button = 1.2rem 
+
+// Testimonials 
+//   p = 1.3rem
+//   h2 = 1.4rem
+
+// max-width 1200 
+
+// About Me Section
+//   "welcome" = 2.3rem
+//   "I'm Micah" = 1.8rem
+//    p & button = 1.1rem 
+
+// max-width 996px 
+  // main heading = 3.5rem
+
+// Section 2 (styles of photography)
+//   Heading = 2.5rem/fontweight = 500
+//   Button font-size = 1.1rem
+
+// About Me Section
+//   "welcome" = 2.1rem
+//   "I'm Micah" = 1.7rem
+//    p & button = 1.1rem 
+
+// Testimonials 
+//   p = 1.1rem
+//   h2 = 1.3rem
+
+// max width 768px 
+//   section 2 
+//     h1 2.2rem
+//   About Me Section 
+//     welcome = 2rem
+//     im micah = 1.3rem
+//     p = 1rem  
+
+// max width 600px 
+//   header 
+//     h1 = 3rem
+//     subheading = 1.3rem
+//     a = 1rem
+//   Section 2 
+//     h1 = 2rem
+//   About Me 
+//     h1 = 2.2rem
+//     h2 = 1.35rem
+
+  
+
+
+
+
+
+
+
+
+
 html {
   padding: env(safe-area-inset);
   overflow-x: hidden;
@@ -98,6 +177,7 @@ h1 {
     font-weight: 500;
     color: Black;
     height: 8%;
+    text-align: center;
   }
 
   .section2Imgs {
@@ -197,10 +277,12 @@ h1 {
       line-height: 4rem;
       h1 {
         font-size: 3rem;
+        font-weight: 400;
       }
       h2 {
         margin: 0;
         font-size: 1.9rem;
+        font-weight: 400;
       }
     }
 
@@ -258,21 +340,6 @@ h1 {
       transition: 0.2s;
     }
 
-    h1 {
-      width: 100%;
-      text-align: center;
-      font-size: 3.5rem;
-      margin: 0;
-      font-weight: lighter;
-    }
-
-    h2 {
-      width: 100%;
-      text-align: center;
-      margin: 0.3em;
-      font-size: 2.2rem;
-      font-weight: lighter;
-    }
 
     p {
       height: 40%;
@@ -556,14 +623,16 @@ h1 {
     }
     .aboutMeTxt {
       height: fit-content;
-      h1 {
-        font-size: 2.2rem;
-        height: 55px;
+      .headings {
+        h1 {
+        font-size: 2.3rem;
+        height: 50px;
       }
       h2 {
         font-size: 1.8rem;
-        height: 55px;
+        height: 60px;
       }
+    }
       .aboutMePara {
         p {
           font-size: 1.1rem;
@@ -665,7 +734,9 @@ h1 {
       justify-content: space-evenly;
       margin-right: 0;
       width: 45%;
-      h1 {
+      
+      .headings {
+        h1 {
         font-size: 2.1rem;
         height: 45px;
       }
@@ -673,6 +744,7 @@ h1 {
         font-size: 1.7rem;
         height: 65px;
       }
+    }
       .aboutMePara {
         justify-content: flex-start;
         height: fit-content;
@@ -710,12 +782,18 @@ h1 {
         }
         .group {
           min-width: 300px;
+
           .sec3Txt {
             font-size: 1.2rem;
           }
+
           .sec3para {
-            font-size: 1.1rem;
             width: 80%;
+            p {
+              font-size: 1.1rem;
+            
+            }
+
           }
         }
       }
