@@ -33,14 +33,14 @@ body {
   align-items: center;
   position: absolute;
   bottom: -50px;
-  left: 38%;
-  height: 3em;
-  width: 25%;
+  left: 40%;
+  height: 2.6em;
+  width: 22%;
   text-align: center;
   background-color: #d4e1f0;
   z-index: 2;
   // margin: -90px auto 0 auto;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 // End Hero & Services Box // Begin Packages
@@ -75,7 +75,7 @@ body {
       margin: 0;
     }
     p {
-      font-size: 1.3em;
+      font-size: 1.2em;
       margin-bottom: 10px;
     }
     button {
@@ -106,17 +106,14 @@ body {
     background-position: 0 0;
   }
   .services {
-    font-size: 2rem;
     margin-top: -50px;
+    width: 24%;
+    left: 38%;
   }
   .packages {
     min-height: 875px;
     .txt {
-      font-size: 0.9rem;
-      margin-top: 20px;
-    }
-    h1 {
-      font-size: 1.8rem;
+      margin-bottom: 1em;
     }
   }
 }
@@ -130,11 +127,15 @@ body {
     min-height: 700px;
     max-height: 850px;
     .txt {
-      font-size: 0.8rem;
-      margin-top: 0;
+      margin-bottom: 2em;
     }
-    h1 {
-      font-size: 1.6rem;
+    .packageDetail {
+      h1 {
+        font-size: 1.7rem;
+      }
+      p {
+        font-size: 1.1rem;
+      }
     }
   }
 }
@@ -148,15 +149,25 @@ body {
     background-position: center;
   }
   .services {
-    width: 40%;
-    left: 30%;
+    width: 38%;
+    left: 31%;
+    font-size: 2.3rem;
+    font-weight: 300;
   }
   .packages {
     min-height: 775px;
     width: 85%;
     height: 100vh;
+
     .packageDetail {
       width: 47%;
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
     }
   }
 }
@@ -165,22 +176,24 @@ body {
   .header {
     background-position: center;
   }
-  .packages {
-    min-height: 1500px;
-  }
 }
 
 @media (max-width: 500px) {
+  .services {
+    width: 44%;
+    left: 28%;
+  }
+
   .packages {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
     width: 100vw;
-    height: 190vh;
-    max-width: 100vw;
+    min-height: 190vh;
+    // max-width: 100vw;
     .packageDetail {
       width: 70%;
-      height: 22%;
+      height: 60%;
       margin-bottom: 20px;
       padding: 20px 40px;
       position: relative;
@@ -190,6 +203,7 @@ body {
       }
       .txt {
         font-size: 0.8rem;
+        margin-bottom: 50px;
       }
       button {
         position: absolute;
@@ -199,5 +213,18 @@ body {
         bottom: 0;
       }
     }
+  }
+}
+
+@media (max-width: 390px) {
+  .header {
+    height: 50vh;
+  }
+
+  .services {
+    width: 70%;
+    left: 15%;
+    height: 4rem;
+    font-size: 2rem;
   }
 }
