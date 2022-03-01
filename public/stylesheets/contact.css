@@ -517,14 +517,15 @@ body h1 {
   text-align: center;
   margin-bottom: 1%;
   margin-top: 0.5em;
-  font-size: 3.7rem;
+  font-size: 3.8rem;
   color: #343a40;
 }
 
 body .subheading {
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   margin-top: 0;
+  margin-bottom: 0.5em;
   width: 60%;
   font-weight: 500;
   color: #6c757d;
@@ -540,7 +541,7 @@ body .subheading-linebreak {
 
 .main-paragraph {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 1.4;
   margin-top: 15px;
   width: 55%;
@@ -595,6 +596,7 @@ body .subheading-linebreak {
 .contact-form .column .input-element {
   width: 100%;
   height: 33%;
+  font-size: .75rem;
 }
 
 form label {
@@ -610,6 +612,7 @@ form input {
   border: 4px double #495057;
   border-radius: 5px;
   color: #343a40;
+  font-size: 1.2rem;
 }
 
 .package-select select {
@@ -620,6 +623,7 @@ form input {
   font-size: 15px;
   color: #343a40;
   background-color: white;
+  font-size: 1.2rem;
 }
 
 .notes-box textarea {
@@ -629,7 +633,8 @@ form input {
   border-radius: 5px;
   color: #343a40;
   line-height: 1em;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 300;
 }
 
 .send-button {
@@ -675,7 +680,7 @@ form input {
     height: 25%;
   }
   .contact-form .column .input-element input {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .contact-form .column .input-element button {
     height: 40%;
@@ -693,19 +698,24 @@ form input {
     margin: 0 2rem;
   }
   .contact-form .column .input-element input {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .contact-form .column .notes-box textarea {
     line-height: 2em;
+    font-size: 1.2rem;
   }
 }
 
 @media (max-width: 992px) {
   .heading h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
+  }
+  .heading .subheading {
+    font-size: 1.4rem;
+    margin-bottom: .75em;
   }
   .main-paragraph {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     width: 65%;
   }
   svg {
@@ -731,9 +741,11 @@ form input {
     padding: 0;
     height: 50vh;
   }
+  body .heading h1 {
+    font-size: 3rem;
+  }
   body .heading .subheading {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
+    font-size: 1.2rem;
   }
   body .heading .main-paragraph {
     font-size: 1.1em;
@@ -776,6 +788,7 @@ form input {
   body .heading {
     height: 50vh;
     margin: 10% 0;
+    margin-bottom: 5%;
   }
   body .heading h1 {
     font-size: 2.5rem;
@@ -785,7 +798,7 @@ form input {
     font-size: 1.2rem;
   }
   body .heading .main-paragraph {
-    font-size: 1.1em;
+    font-size: 1em;
     width: 85%;
     margin-top: 5px;
   }
@@ -805,6 +818,9 @@ form input {
   }
   .contact-form .column .input-element input {
     height: 40%;
+    font-size: 1.1rem;
+  }
+  .contact-form .column .package-select select {
     font-size: 1.1rem;
   }
   .send-button button {
