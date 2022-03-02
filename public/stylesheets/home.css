@@ -646,6 +646,14 @@ h1 {
   background-color: white;
   color: #5c88bc;
   border: #5c88bc 2px solid;
+  cursor: pointer;
+}
+
+.section2 .showBtns button:hover {
+  background-color: #5c88bc;
+  color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .section2 .hideBtns {
@@ -900,7 +908,7 @@ h1 {
 .section3 .testimonials .group p {
   text-align: center;
   margin: auto;
-  width: 60%;
+  width: 70%;
   font-size: 1.2rem;
   margin: 0;
   padding: none;
@@ -1037,7 +1045,7 @@ h1 {
     max-height: 850px;
   }
   .section3 .content .testimonials p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .section3 .content .testimonials h2 {
     font-size: 1.4rem;
@@ -1059,6 +1067,10 @@ h1 {
   }
   .section3 .content .testimonials h2 {
     margin-top: 0;
+  }
+  .section3 .content .testimonials p {
+    width: 80%;
+    font-size: 1.1rem;
   }
 }
 
@@ -1131,7 +1143,7 @@ h1 {
     min-width: 375px;
   }
   .section3 .content .testimonials p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -1263,7 +1275,7 @@ h1 {
     font-size: 1.2rem;
   }
   .section3 .content .testimonials .group .sec3para {
-    width: 80%;
+    width: 90%;
   }
   .section3 .content .testimonials .group .sec3para p {
     font-size: 1.1rem;
