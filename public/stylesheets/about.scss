@@ -31,26 +31,21 @@ p {
 img {
   float: left;
   width: 400px;
-  margin-right: 25px;
+  margin-right: 2rem;
 }
 
 .text {
-  width: 900px;
+  max-width: 900px;
   height: 100%;
-  .line {
-    margin: 0;
-    margin-right: 21.2em;
-    border-bottom: black solid 2px;
-    width: 8rem;
-    float: right;
-    display: block;
-    position: absolute;
-  }
+
   h1 {
     font-size: 2.5rem;
     font-weight: 400;
+    width: 8rem;
     margin-top: 0;
     margin-bottom: 0.15em;
+    border-bottom: black 2px solid;
+    display: inline-block;
   }
   .about-me-paras {
     p {
@@ -128,15 +123,17 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+  .all-content {
+    .content {
+      img {
+        width: 17rem;
+      }
+    }
+  }
+
   .text {
     h1 {
       font-size: 2rem;
-    }
-
-    .about-me-paras {
-      p {
-        font-size: 1rem;
-      }
     }
   }
 }
