@@ -510,7 +510,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 5em;
+  margin-top: 6em;
   padding: 3em 3em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -525,35 +525,31 @@ p {
 img {
   float: left;
   width: 400px;
-  margin-right: 25px;
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .text {
-  width: 900px;
+  max-width: 900px;
   height: 100%;
-}
-
-.text .line {
-  margin: 0;
-  margin-right: 21.2em;
-  border-bottom: black solid 2px;
-  width: 8rem;
-  float: right;
-  display: block;
-  position: absolute;
 }
 
 .text h1 {
   font-size: 2.5rem;
   font-weight: 400;
+  width: 8rem;
   margin-top: 0;
-  margin-bottom: 0.15em;
+  margin-bottom: 0.5em;
+  border-bottom: black 2px solid;
+  display: inline-block;
 }
 
 .text .about-me-paras p {
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.4;
+  margin: 0;
+  margin-bottom: 0.75rem;
 }
 
 .text .about-me-paras .p-intro {
@@ -637,11 +633,73 @@ a:hover button:hover {
 }
 
 @media (max-width: 768px) {
+  .all-content {
+    padding: 7rem 2rem;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .all-content .content img {
+    width: 17rem;
+    margin-right: 1.2rem;
+    margin-bottom: 0.6rem;
+  }
   .text h1 {
     font-size: 2rem;
   }
   .text .about-me-paras p {
-    font-size: 1rem;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 576px) {
+  .all-content {
+    padding-top: 6rem;
+  }
+  .all-content .content img {
+    width: 12rem;
+  }
+  .all-content .content .text h1 {
+    font-size: 1.7rem;
+    width: 6rem;
+    margin-bottom: 0.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .all-content {
+    padding: 6rem 1.5rem;
+  }
+  .all-content .content img {
+    width: 10rem;
+    max-height: 240px;
+  }
+  .all-content .content .text h1 {
+    font-size: 1.5rem;
+    width: 5rem;
+    margin-bottom: 0;
+  }
+  .all-content .content .about-me-paras p {
+    font-size: 0.9em;
+  }
+  .all-content .content .aboutButtons {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .all-content .content .aboutButtons a {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 300px) {
+  .all-content {
+    padding: 5rem 1rem;
+  }
+  .all-content .content img {
+    width: 7rem;
+    max-height: 168px;
+    margin-right: 0.8rem;
   }
 }
 /*# sourceMappingURL=about.css.map */
