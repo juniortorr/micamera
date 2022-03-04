@@ -377,6 +377,16 @@ form {
   .contact-form {
     .column {
       width: 92%;
+      .input-element {
+        input {
+          height: 35%;
+          width: 90%;
+          font-size: 1.3rem;
+        }
+        textarea {
+          width: 95%;
+        }
+      }
     }
   }
 
@@ -385,15 +395,9 @@ form {
   }
 
   .send-button button {
-    height: 70%;
+    height: 60%;
     width: 80%;
     font-size: 1.3rem;
   }
-  .input-element {
-    input {
-      height: 40%;
-      width: 90%;
-      font-size: 1.3rem;
-    }
-  }
+
 }
