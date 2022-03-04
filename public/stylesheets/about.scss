@@ -23,17 +23,18 @@ p {
   margin-top: 6em;
   padding: 3em 3em;
   box-sizing: border-box;
+  img {
+    float: left;
+    width: 400px;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
 }
 .content {
   height: fit-content;
 }
 
-img {
-  float: left;
-  width: 400px;
-  margin-right: 1.5rem;
-  margin-bottom: 1.5rem;
-}
+
 
 .text {
   max-width: 900px;

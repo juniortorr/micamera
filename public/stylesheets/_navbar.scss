@@ -25,11 +25,11 @@
   .home-img {
     width: 20%;
     box-sizing: border-box;
-    a {
+    .img-link {
       display: flex;
       justify-content: flex-start;
     }
-    img {
+    .logo {
       margin-left: 20px;
       width: 80%;
       align-self: flex-start;
