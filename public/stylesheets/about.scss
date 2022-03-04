@@ -139,13 +139,21 @@ a:hover {
         margin-right: 1.2rem;
         margin-bottom: 0.6rem;
       }
+      .text {
+        h1 {
+          font-size: 2rem;
+        }
+        .about-me-paras {
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
     }
   }
 
   .text {
-    h1 {
-      font-size: 2rem;
-    }
+
 
     .about-me-paras {
       p {
