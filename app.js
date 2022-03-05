@@ -8,6 +8,10 @@ app.set('view engine', 'ejs');
 
 //MiddleWares//
 
+app.use(express.urlencoded({
+  extended: false
+}));
+app.use(express.json());
 app.use(express.static('public'));
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -21,7 +25,7 @@ app.get('/', (req, res) => {
 
 app.get('/about', (req, res) => {
   res.render('about');
-});
+}); 
 
 app.get('/contact', (req, res) => {
   res.render('contact');
