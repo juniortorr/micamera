@@ -399,10 +399,16 @@ footer .quickLinks {
 footer a {
   text-decoration: none;
   color: white;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+
+footer a:hover {
+  border-bottom: white 1px solid;
 }
 
 footer .email-link {
-  margin: 0;
+  margin-left: 12px;
 }
 
 footer .social {
@@ -412,10 +418,17 @@ footer .social {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin-top: 10px;
 }
 
-footer .social p {
+footer .social .insta {
   margin-left: 10px;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+
+footer .social a:hover {
+  border-bottom: 1px solid white;
 }
 
 footer .social img {

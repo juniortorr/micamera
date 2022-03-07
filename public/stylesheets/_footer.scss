@@ -17,15 +17,25 @@ footer {
   a {
     text-decoration: none;
     color: white;
+    transition: all .25s;
+  }
+  a:hover {
+    border-bottom: white 1px solid; 
+    
   }
   .email-link {
-    margin: 0;
+    margin-left: 12px;
   }
   .social {
     display: flex;
     justify-content: flex-start;
-    p {
+    margin-top: 10px;
+    .insta {
       margin-left: 10px;
+      transition: all .25s;
+    }
+    a:hover {
+      border-bottom: 1px solid white;
     }
     img {
       height: 24px;
