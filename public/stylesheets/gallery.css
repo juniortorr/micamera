@@ -492,6 +492,37 @@ body {
   margin: 0;
 }
 
+.section-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 8rem 1.5rem 3rem;
+}
+
+.section-title h1 {
+  text-align: center;
+  font-size: 3.8rem;
+  font-weight: 400;
+}
+
+.section-title .line-break {
+  display: inline-block;
+  width: 6%;
+  border-bottom: solid 1px black;
+  line-height: 0.1em;
+  margin: 5px 5px 5px;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -502,102 +533,24 @@ body {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 80%;
   height: auto;
   margin: auto;
-  margin-top: 125px;
   max-width: 1200px;
-  max-height: 1200px;
+  max-height: 3900px;
   min-width: 1200px;
 }
 
 .container img {
-  width: 390px;
+  width: 325px;
   height: auto;
   margin: auto;
   margin-bottom: 0.5rem;
-}
-
-.container .landscape {
-  height: 260px;
-}
-
-@media (max-width: 1200px) {
-  .container {
-    width: 1000px;
-    min-width: 1000px;
-    height: 1000px;
-    max-height: 950px;
-  }
-  .container img {
-    width: 32%;
-    height: auto;
-  }
-  .container .landscape {
-    height: 213px;
-  }
-}
-
-@media (max-width: 1080px) {
-  .container {
-    max-height: 900px;
-  }
-}
-
-@media (max-width: 1030px) {
-  .container {
-    max-height: 1700px;
-  }
-  .container img {
-    width: 46%;
-    height: auto;
-    margin-bottom: 1rem;
-  }
-}
-
-@media (max-width: 898px) {
-  .container {
-    max-height: 1600px;
-  }
-}
-
-@media (max-width: 843px) {
-  .container {
-    max-height: 1500px;
-  }
-}
-
-@media (max-width: 788px) {
-  .container {
-    max-height: 1300px;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    max-height: none;
-  }
-  .container img {
-    width: 80%;
-    margin-bottom: 1.25rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .container img {
-    width: 95%;
-  }
-}
-
-@media (max-width: 480px) {
-  .container img {
-    width: 100%;
-  }
 }
 /*# sourceMappingURL=gallery.css.map */
