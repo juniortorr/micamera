@@ -545,6 +545,16 @@ h1 {
   color: black;
 }
 
+.fade-in {
+  opacity: 0;
+  -webkit-transition: opacity 475ms ease-in;
+  transition: opacity 475ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
 .headertext {
   color: white;
 }
@@ -602,7 +612,6 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(197, 219, 245, 0.1);
   min-height: 1027px;
   max-width: 1500px;
   margin: 0 auto;
