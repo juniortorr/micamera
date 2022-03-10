@@ -16,6 +16,12 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
       rel="stylesheet"
     />
+
+    <!-- EmailJs -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<%- include('partials/contactscript')  %> 
   </head>
   <body>
     <%- include('partials/navbar') %>
@@ -83,33 +89,34 @@
       </svg>
     </div>
 
-    <form class="contact-form" action="">
+    <form role="form" id="contact-form" class="contact-form" action="">
+      <input type="hidden" name="contact_number">
       <div class="column">
         <div class="input-element first-name">
           <label for="firstName">First Name</label>
-          <input id="firstName" name="" value="" type="text" />
+          <input id="firstName" name="firstName" value="" type="text" />
         </div>
 
         <div class="input-element last-name">
           <label for="lastName">Last Name</label>
-          <input id="lastname" name="" value="" type="text" />
+          <input id="lastName" name="lastname" value="" type="text" />
         </div>
 
         <div class="input-element email">
           <label for="email">Email Address</label>
-          <input id="email" name="" value="" type="email" />
+          <input id="email" name="email" value="" type="email" />
         </div>
       </div>
 
       <div class="column">
         <div class="input-element package-select">
           <label for="package">Package (Please Choose One)</label>
-          <select name="package" id="package">
-            <option value="">Mi Amor Package</option>
-            <option value="">Us Package</option>
-            <option value="">Together Package</option>
-            <option value="">Corazones Package</option>
-            <option value="">Other</option>
+          <select name="package" id="package" value="package">
+            <option name="package" value="mi-amor">Mi Amor Package</option>
+            <option name="package" value="us">Us Package</option>
+            <option name="package" value="together">Together Package</option>
+            <option name="package" value="corazones">Corazones Package</option>
+            <option name="package" value="other">Other</option>
           </select>
         </div>
 
@@ -119,7 +126,7 @@
         </div>
 
         <div class="input-element send-button">
-          <button>Send</button>
+          <button type="submit" onclick='sendMail()' value="submit">Send</button>
         </div>
       </div>
     </form>
