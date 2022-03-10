@@ -8,6 +8,14 @@ html,
 body {
   margin: 0;
 }
+.fade-in {
+  opacity: 0; 
+  transition: opacity 475ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
 
 .section-title {
   display: flex;
