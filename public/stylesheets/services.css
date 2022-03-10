@@ -562,6 +562,16 @@ body {
   margin-top: 7em;
 }
 
+.packages .fade-in {
+  opacity: 0;
+  -webkit-transition: opacity 250ms ease-in;
+  transition: opacity 250ms ease-in;
+}
+
+.packages .fade-in.appear {
+  opacity: 1;
+}
+
 .packages .package-detail-wrap {
   height: 48%;
   width: 45%;
