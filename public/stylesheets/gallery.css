@@ -505,6 +505,16 @@ body {
   margin: 0;
 }
 
+.fade-in {
+  opacity: 0;
+  -webkit-transition: opacity 475ms ease-in;
+  transition: opacity 475ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
 .section-title {
   display: -webkit-box;
   display: -ms-flexbox;
