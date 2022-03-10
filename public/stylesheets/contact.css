@@ -502,6 +502,16 @@ html {
   padding: env(safe-area-inset);
 }
 
+.fade-in {
+  opacity: 0;
+  -webkit-transition: opacity 475ms ease-in;
+  transition: opacity 475ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
