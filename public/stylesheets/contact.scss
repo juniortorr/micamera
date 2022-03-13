@@ -28,6 +28,8 @@ body {
     margin-top: 4em;
     width: 100%;
     height: 70vh;
+    max-width: 1500px;
+    margin: 0 auto;
   }
 
   h1 {
@@ -72,15 +74,26 @@ body {
   min-height: 4em;
 }
 
+.formBackground {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-color: #d4e1f0;
+
+}
+
 .contact-form {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #d4e1f0;
   width: 100vw;
   height: 50vh;
-  padding: 3em 0;
+  padding: 0;
+  max-width: 1500px;
+  padding-top: 20px;
   // padding-left: 4em;
 
   .column {
@@ -146,6 +159,7 @@ form {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  height: 300px;
 }
 
 .send-button button {
@@ -167,16 +181,23 @@ form {
   transition: 0.2s;
 }
 
-@media(min-width: 1400px) {
-  .contact-form {
-    .column {
-      .input-element {
-        height: 25%;
-        input {
-          font-size: 1.3rem;
+@media(min-width: 1500px) {
+  .formBackground {
+    .contact-form {
+      .column {
+        .input-element {
+          input {
+            height: 27%;
+          }
+          button {
+            height: 30%;
+            margin-bottom: 0;
+            margin-top: 25px;
+          }
         }
-        button {
-          height: 40%;
+        .send-button {
+
+          align-items: flex-start;
         }
       }
     }
@@ -277,6 +298,9 @@ form {
       margin-bottom: 20px;
     }
   }
+  .formBackground {
+    height: 80vh;
+  }
 
   .contact-form {
     flex-direction: column;
@@ -336,7 +360,9 @@ form {
       margin: 1.5em 0;
     }
   }
-
+  .formBackground {
+    height: 95vh;
+  }
   .contact-form {
     height: 90vh;
 
@@ -381,6 +407,9 @@ form {
     .main-paragraph {
       width: 90%;
     }
+  }
+  .formBackground {
+    height: 98vh;
   }
 
   .contact-form {

@@ -534,6 +534,8 @@ body .heading {
   margin-top: 4em;
   width: 100%;
   height: 70vh;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 body h1 {
@@ -577,6 +579,21 @@ body .subheading-linebreak {
   min-height: 4em;
 }
 
+.formBackground {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60vh;
+  background-color: #d4e1f0;
+}
+
 .contact-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -591,10 +608,11 @@ body .subheading-linebreak {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #d4e1f0;
   width: 100vw;
   height: 50vh;
-  padding: 3em 0;
+  padding: 0;
+  max-width: 1500px;
+  padding-top: 20px;
 }
 
 .contact-form .column {
@@ -674,6 +692,7 @@ form input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 300px;
 }
 
 .send-button button {
@@ -698,15 +717,19 @@ form input {
   transition: 0.2s;
 }
 
-@media (min-width: 1400px) {
-  .contact-form .column .input-element {
-    height: 25%;
+@media (min-width: 1500px) {
+  .formBackground .contact-form .column .input-element input {
+    height: 27%;
   }
-  .contact-form .column .input-element input {
-    font-size: 1.3rem;
+  .formBackground .contact-form .column .input-element button {
+    height: 30%;
+    margin-bottom: 0;
+    margin-top: 25px;
   }
-  .contact-form .column .input-element button {
-    height: 40%;
+  .formBackground .contact-form .column .send-button {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -778,6 +801,9 @@ form input {
   body .heading svg {
     margin-bottom: 20px;
   }
+  .formBackground {
+    height: 80vh;
+  }
   .contact-form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -828,6 +854,9 @@ form input {
   body .heading svg {
     margin: 1.5em 0;
   }
+  .formBackground {
+    height: 95vh;
+  }
   .contact-form {
     height: 90vh;
   }
@@ -866,6 +895,9 @@ form input {
   }
   body .heading .main-paragraph {
     width: 90%;
+  }
+  .formBackground {
+    height: 98vh;
   }
   .contact-form .column {
     width: 92%;
