@@ -1022,8 +1022,8 @@ h1 {
 
 @media (max-width: 576px) {
   .header {
-    height: 80vh;
-    background: url(/imgs/couple-beach-walk-mobile.jpg) no-repeat center;
+    height: 100vh;
+    background: url(/imgs/couple-beach-walk-mobile.jpg) no-repeat center cover;
   }
   .aboutMe {
     min-width: 480px;
