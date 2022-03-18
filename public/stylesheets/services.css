@@ -563,12 +563,11 @@ body {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 130vh;
+  height: 300vh;
   width: 60%;
   margin: 5em auto;
   max-width: 900px;
   min-height: 1000px;
-  max-height: 1200px;
   margin-top: 7em;
 }
 
@@ -583,8 +582,10 @@ body {
 }
 
 .packages .package-detail-wrap {
-  height: 48%;
+  height: 25%;
   width: 45%;
+  min-width: 325px;
+  min-height: 500px;
 }
 
 .packages .package-detail-wrap .hidden-btn {
@@ -608,6 +609,8 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid black;
+  min-width: 325px;
+  min-height: 500px;
 }
 
 .packages .packageDetail .txt {
@@ -623,9 +626,25 @@ body {
   margin: 0;
 }
 
+.packages .packageDetail .subheading {
+  text-align: center;
+  font-weight: 500;
+  margin-top: 0;
+  font-size: 1rem;
+  color: #6c757d;
+}
+
 .packages .packageDetail p {
   font-size: 1.2em;
   margin-bottom: 10px;
+}
+
+.packages .packageDetail .price {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin: 0.8em;
 }
 
 .packages .packageDetail button {
@@ -652,188 +671,5 @@ body {
   text-decoration: none;
   height: 12%;
   width: 90%;
-}
-
-@media (max-width: 1200px) {
-  .header {
-    background-position: 0 0;
-  }
-  .services {
-    margin-top: -50px;
-    width: 24%;
-    left: 38%;
-  }
-  .packages {
-    min-height: 1000px;
-    max-height: 1000px;
-  }
-  .packages .txt {
-    margin-bottom: 1em;
-  }
-}
-
-@media (max-width: 996px) {
-  .services {
-    margin-top: -90px;
-  }
-  .packages {
-    width: 75%;
-    min-height: 815px;
-    max-height: 850px;
-  }
-  .packages .txt {
-    margin-bottom: 2em;
-  }
-  .packages .packageDetail {
-    min-height: -webkit-fit-content;
-    min-height: -moz-fit-content;
-    min-height: fit-content;
-  }
-  .packages .packageDetail h1 {
-    font-size: 1.7rem;
-  }
-  .packages .packageDetail p {
-    font-size: 1.1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  body {
-    min-width: none;
-    width: 100vw;
-  }
-  .header {
-    background-position: center;
-  }
-  .services {
-    width: 38%;
-    left: 31%;
-    font-size: 2.3rem;
-  }
-  .packages {
-    min-height: 775px;
-    width: 85%;
-    height: 100vh;
-  }
-  .packages .package-detail-wrap {
-    width: 47%;
-  }
-  .packages .packageDetail h1 {
-    font-size: 1.5rem;
-  }
-  .packages .packageDetail p {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .header {
-    background-position: center;
-  }
-}
-
-@media (max-width: 500px) {
-  .services {
-    width: 44%;
-    left: 28%;
-  }
-  .packages {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100vw;
-    min-height: 190vh;
-    min-height: -webkit-fit-content;
-    min-height: -moz-fit-content;
-    min-height: fit-content;
-    max-height: -webkit-fit-content;
-    max-height: -moz-fit-content;
-    max-height: fit-content;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-  .packages .package-detail-wrap {
-    position: relative;
-    width: 70%;
-    height: 60%;
-    margin-bottom: 2em;
-  }
-  .packages .package-detail-wrap .hidden-btn {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 15%;
-    width: 100%;
-    border: solid 2px #5c88bc;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  .packages .package-detail-wrap .hidden-btn button {
-    width: 100%;
-    height: 100%;
-    border: none;
-    color: #5c88bc;
-    background-color: white;
-    font-size: 1.2rem;
-    cursor: pointer;
-  }
-  .packages .package-detail-wrap .hidden-btn button:hover {
-    background-color: #5c88bc;
-    color: white;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-  }
-  .packages .packageDetail {
-    width: 100%;
-    height: 100%;
-    padding: 20px 40px;
-    position: relative;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  .packages .packageDetail h1 {
-    font-size: 1.2rem;
-  }
-  .packages .packageDetail .txt {
-    font-size: 0.8rem;
-    margin-bottom: 75px;
-  }
-  .packages .packageDetail a {
-    display: none;
-  }
-}
-
-@media (max-width: 390px) {
-  .header {
-    height: 50vh;
-  }
-  .services {
-    width: 70%;
-    left: 15%;
-    height: 4rem;
-    font-size: 2rem;
-    bottom: -30px;
-  }
-  .packages {
-    min-height: -webkit-fit-content;
-    min-height: -moz-fit-content;
-    min-height: fit-content;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    margin-top: 4rem;
-    height: fit-content;
-    max-height: -webkit-fit-content;
-    max-height: -moz-fit-content;
-    max-height: fit-content;
-  }
 }
 /*# sourceMappingURL=services.css.map */
