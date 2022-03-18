@@ -544,7 +544,7 @@ body {
           align-items: center;
   position: absolute;
   bottom: -50px;
-  left: 40%;
+  left: 38%;
   height: 2.6em;
   width: 22%;
   text-align: center;
@@ -552,6 +552,7 @@ body {
   z-index: 2;
   font-size: 2.5rem;
   font-weight: 300;
+  min-width: 260px;
 }
 
 .packages {
@@ -563,12 +564,14 @@ body {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 300vh;
+  height: 200vh;
   width: 60%;
   margin: 5em auto;
-  max-width: 900px;
+  width: 900px;
   min-height: 1000px;
   margin-top: 7em;
+  min-height: 1650px;
+  max-height: 1700px;
 }
 
 .packages .fade-in {
@@ -583,9 +586,9 @@ body {
 
 .packages .package-detail-wrap {
   height: 25%;
-  width: 45%;
+  width: 48%;
   min-width: 325px;
-  min-height: 500px;
+  min-height: 510px;
 }
 
 .packages .package-detail-wrap .hidden-btn {
@@ -610,7 +613,7 @@ body {
           box-sizing: border-box;
   border: 1px solid black;
   min-width: 325px;
-  min-height: 500px;
+  min-height: 510px;
 }
 
 .packages .packageDetail .txt {
@@ -644,7 +647,7 @@ body {
   font-weight: 500;
   font-size: 1.2rem;
   color: #6c757d;
-  margin: 0.8em;
+  margin: 1em;
 }
 
 .packages .packageDetail button {
@@ -671,5 +674,128 @@ body {
   text-decoration: none;
   height: 12%;
   width: 90%;
+}
+
+.packages .p1 {
+  margin-top: 0;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    background-position: 0 0;
+  }
+  .packages {
+    max-height: 3000px;
+    width: 750px;
+  }
+  .packages .package-detail-wrap {
+    min-width: 325px;
+  }
+  .packages .package-detail-wrap .packageDetail {
+    min-width: 325px;
+  }
+}
+
+@media (max-width: 996px) {
+  .services {
+    left: 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    left: 33%;
+    font-size: 2.3rem;
+  }
+  .header {
+    background-position: center;
+  }
+  .packages {
+    width: 600px;
+    min-width: 600px;
+    min-height: 1500px;
+  }
+  .packages .package-detail-wrap {
+    min-width: 270px;
+    min-height: 475px;
+    height: 475px;
+  }
+  .packages .package-detail-wrap .packageDetail {
+    min-width: 270px;
+    min-height: 475px;
+    height: 475px;
+  }
+  .packages .package-detail-wrap .packageDetail h1 {
+    font-size: 1.7rem;
+  }
+  .packages .package-detail-wrap .packageDetail p {
+    font-size: 1rem;
+  }
+  .packages .package-detail-wrap .packageDetail .txt .last-price {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 670px) {
+  .services {
+    left: 29%;
+  }
+}
+
+@media (max-width: 600px) {
+  .services {
+    width: 44%;
+    left: 28%;
+    min-width: 167px;
+  }
+  .packages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 3000px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    min-width: 200px;
+  }
+  .packages .package-detail-wrap {
+    width: 70%;
+    min-width: 305px;
+  }
+  .packages .package-detail-wrap .packageDetail {
+    min-width: 305px;
+  }
+  .packages .package-detail-wrap .packageDetail .price {
+    margin-top: 25px;
+  }
+  .packages .package-detail-wrap .packageDetail .p1 {
+    margin-top: 15px;
+  }
+  .packages .package-detail-wrap .packageDetail .txt .last-price {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 305px) {
+  .services {
+    left: 26%;
+  }
+  .packages {
+    height: 3100px;
+    max-height: 3200px;
+  }
+  .packages .package-detail-wrap {
+    min-width: 250px;
+    height: 495px;
+  }
+  .packages .package-detail-wrap .packageDetail {
+    min-width: 250px;
+    height: 495px;
+  }
+  .packages .package-detail-wrap .packageDetail .txt .last-price {
+    margin-top: 25px;
+  }
 }
 /*# sourceMappingURL=services.css.map */
