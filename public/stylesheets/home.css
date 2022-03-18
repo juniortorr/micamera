@@ -2,8 +2,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
-  height: 8vh;
+  z-index: 101;
+  height: 60px;
   min-height: 58px;
   background-color: #234770f1;
   display: -webkit-box;
@@ -239,7 +239,7 @@
 .options2 {
   z-index: 100;
   position: fixed;
-  top: 8vh;
+  top: 60px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -371,6 +371,16 @@
   .navbar .home-img img {
     min-width: 200px;
     padding: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar .home-img {
+    min-width: 160px;
+  }
+  .navbar .home-img img {
+    min-width: 160px;
+    width: 160px;
   }
 }
 
@@ -1005,6 +1015,7 @@ h1 {
     height: fit-content;
   }
   .aboutMe .aboutMeTxt {
+    max-height: 645px;
     margin: 0;
   }
   .aboutMe .aboutMeTxt .aboutMePara p {
@@ -1017,30 +1028,10 @@ h1 {
     min-height: fit-content;
     max-width: 980px;
   }
-}
-
-@media (min-width: 1800px), (min-height: 1145px) {
-  .header .headertext h1 {
-    font-size: 4.5rem;
-  }
-  .header .headertext h2 {
-    font-size: 2.5rem;
-  }
-  .header .headertext button {
-    height: 75px;
-    font-size: 1.5rem;
-  }
-  .aboutMe .aboutMeTxt .aboutMePara p {
-    font-size: 1.7rem;
-  }
-  .aboutMe .aboutMeTxt .aboutMeBtn {
-    height: 75px;
-  }
-  .aboutMe .aboutMeTxt .aboutMeBtn a {
-    height: 100%;
-  }
-  .aboutMe .aboutMeTxt .aboutMeBtn button {
-    height: 100%;
+  .section3 {
+    max-width: 1700px;
+    margin: 0 auto;
+    max-height: 1100px;
   }
 }
 
@@ -1518,8 +1509,8 @@ h1 {
 
 @media (max-width: 576px) {
   .header {
-    height: 80vh;
-    background: url(/imgs/couple-beach-walk-mobile.jpg) no-repeat center;
+    height: 100vh;
+    background: url(/imgs/couple-beach-walk-mobile.jpg) no-repeat center cover;
   }
   .aboutMe {
     min-width: 480px;

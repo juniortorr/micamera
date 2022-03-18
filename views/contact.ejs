@@ -89,47 +89,49 @@
       </svg>
     </div>
 
-    <form role="form" id="contact-form" class="contact-form fade-in" action="">
-      <input type="hidden" name="contact_number">
-      <div class="column">
-        <div class="input-element first-name">
-          <label for="firstName">First Name</label>
-          <input id="firstName" name="firstName" value="" type="text" />
+    <div class="formBackground">
+      <form role="form" id="contact-form" class="contact-form fade-in" action="">
+        <input type="hidden" name="contact_number">
+        <div class="column">
+          <div class="input-element first-name">
+            <label for="firstName">First Name</label>
+            <input id="firstName" name="firstName" value="" type="text" />
+          </div>
+  
+          <div class="input-element last-name">
+            <label for="lastName">Last Name</label>
+            <input id="lastName" name="lastname" value="" type="text" />
+          </div>
+  
+          <div class="input-element email">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" value="" type="email" />
+          </div>
         </div>
-
-        <div class="input-element last-name">
-          <label for="lastName">Last Name</label>
-          <input id="lastName" name="lastname" value="" type="text" />
+  
+        <div class="column">
+          <div class="input-element package-select">
+            <label for="package">Package (Please Choose One)</label>
+            <select name="package" id="package" value="package">
+              <option name="package" value="mi-amor">Mi Amor Package</option>
+              <option name="package" value="us">Us Package</option>
+              <option name="package" value="together">Together Package</option>
+              <option name="package" value="corazones">Corazones Package</option>
+              <option name="package" value="other">Other</option>
+            </select>
+          </div>
+  
+          <div class="input-element notes-box">
+            <label for="notes">Notes</label>
+            <textarea id="notes" name="notes" value="" rows="40" columns="30" /></textarea>
+          </div>
+  
+          <div class="input-element send-button">
+            <button type="submit" onclick='sendMail()' value="submit">Send</button>
+          </div>
         </div>
-
-        <div class="input-element email">
-          <label for="email">Email Address</label>
-          <input id="email" name="email" value="" type="email" />
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="input-element package-select">
-          <label for="package">Package (Please Choose One)</label>
-          <select name="package" id="package" value="package">
-            <option name="package" value="mi-amor">Mi Amor Package</option>
-            <option name="package" value="us">Us Package</option>
-            <option name="package" value="together">Together Package</option>
-            <option name="package" value="corazones">Corazones Package</option>
-            <option name="package" value="other">Other</option>
-          </select>
-        </div>
-
-        <div class="input-element notes-box">
-          <label for="notes">Notes</label>
-          <textarea id="notes" name="notes" value="" rows="40" columns="30" /></textarea>
-        </div>
-
-        <div class="input-element send-button">
-          <button type="submit" onclick='sendMail()' value="submit">Send</button>
-        </div>
-      </div>
-    </form>
+      </form>
+    </div>
     <%- include('partials/footer') %>
     <%- include('partials/scripts') %>
 
