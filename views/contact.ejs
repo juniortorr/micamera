@@ -95,17 +95,17 @@
         <div class="column">
           <div class="input-element first-name">
             <label for="firstName">First Name</label>
-            <input id="firstName" name="firstName" value="" type="text" />
+            <input id="contact-input firstName" name="firstName" value="" type="text" required/>
           </div>
   
           <div class="input-element last-name">
             <label for="lastName">Last Name</label>
-            <input id="lastName" name="lastname" value="" type="text" />
+            <input id="contact-input lastName" name="lastname" value="" type="text" required/>
           </div>
   
           <div class="input-element email">
             <label for="email">Email Address</label>
-            <input id="email" name="email" value="" type="email" />
+            <input id="contact-input email" name="email" value="" type="email" required/>
           </div>
         </div>
   
@@ -117,13 +117,15 @@
               <option name="package" value="us">Us Package</option>
               <option name="package" value="together">Together Package</option>
               <option name="package" value="corazones">Corazones Package</option>
+              <option name="package" value="new-chapter">New Chapter Package</option>
+              <option name="package" value="just-you">Just You Package</option>
               <option name="package" value="other">Other</option>
             </select>
           </div>
   
           <div class="input-element notes-box">
             <label for="notes">Notes</label>
-            <textarea id="notes" name="notes" value="" rows="40" columns="30" /></textarea>
+            <textarea id="contact-input notes" name="notes" value="" rows="40" columns="30" /></textarea>
           </div>
   
           <div class="input-element send-button">
