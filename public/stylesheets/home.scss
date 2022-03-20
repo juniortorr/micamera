@@ -109,7 +109,7 @@ h1 {
   background-color: lightblue;
   text-align: center;
   margin: 0;
-  background: url(/imgs/couple-beach-walk.jpg) no-repeat;
+  background: url(/imgs/couple-beach-walking1.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -856,6 +856,10 @@ h1 {
 }
 
 @media (max-width: 768px) {
+  .header {
+    background: url(/imgs/couple-beach-walk-ipad.jpg) no-repeat center cover;
+
+  }
   .section2 {
     min-width: 600px;
     min-height: 1200px;
@@ -1023,7 +1027,7 @@ h1 {
 @media (max-width: 576px) {
   .header {
     height: 100vh;
-    background: url(/imgs/couple-beach-walk-mobile.jpg) no-repeat center cover;
+    background: url(/imgs/couple-beach-walk-mobile2.jpg) no-repeat center cover;
   }
   .aboutMe {
     min-width: 480px;
