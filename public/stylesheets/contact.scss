@@ -79,7 +79,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  height: 450px;
   background-color: #d4e1f0;
 
 }
@@ -90,7 +90,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   width: 100vw;
-  height: 50vh;
+  height: 380px;
   padding: 0;
   max-width: 1500px;
   padding-top: 20px;
@@ -236,6 +236,8 @@ form {
 
 @media (max-width: 992px) {
   .heading {
+    height: 475px;
+    min-height: 475px;
     h1 {
       font-size: 3.5rem;
     }
@@ -278,7 +280,8 @@ form {
 @media (max-width: 768px) {
   body .heading {
     padding: 0;
-    height: 50vh;
+    height: 360px;
+    min-height: fit-content;
 
     h1 {
       font-size: 3rem;
@@ -299,12 +302,13 @@ form {
     }
   }
   .formBackground {
-    height: 80vh;
+    min-height: fit-content;
+    height: 600px;
   }
 
   .contact-form {
     flex-direction: column;
-    height: 70vh;
+    height: 575px;
 
     .column {
       width: 80%;
@@ -338,7 +342,8 @@ form {
 
 @media (max-width: 576px) {
   body .heading {
-    height: 50vh;
+    height: 330px;
+    min-height: 330px;
     margin: 10% 0;
     margin-bottom: 5%;
     h1 {
@@ -361,10 +366,12 @@ form {
     }
   }
   .formBackground {
-    height: 95vh;
+    height: 650px;
+    min-height: 650px;
   }
   .contact-form {
-    height: 90vh;
+    height: 620px;
+    min-height: 620px;
 
     .column {
       width: 85%;
@@ -392,7 +399,8 @@ form {
 
 @media (max-width: 480px) {
   body .heading {
-    height: 60vh;
+    height: 412px;
+    min-height: 412px;
     margin: 5% 0;
 
     h1 {
@@ -409,10 +417,13 @@ form {
     }
   }
   .formBackground {
-    height: 98vh;
+    height: 700px;
+    min-height: 700px;
   }
 
   .contact-form {
+    height: 650px;
+    min-height: 650px;
     .column {
       width: 92%;
       .input-element {
