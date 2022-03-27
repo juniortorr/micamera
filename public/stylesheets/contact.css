@@ -600,7 +600,7 @@ body .subheading-linebreak {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 60vh;
+  height: 450px;
   background-color: #d4e1f0;
 }
 
@@ -619,7 +619,7 @@ body .subheading-linebreak {
       -ms-flex-align: center;
           align-items: center;
   width: 100vw;
-  height: 50vh;
+  height: 380px;
   padding: 0;
   max-width: 1500px;
   padding-top: 20px;
@@ -763,6 +763,10 @@ form input {
 }
 
 @media (max-width: 992px) {
+  .heading {
+    height: 475px;
+    min-height: 475px;
+  }
   .heading h1 {
     font-size: 3.5rem;
   }
@@ -795,7 +799,10 @@ form input {
 @media (max-width: 768px) {
   body .heading {
     padding: 0;
-    height: 50vh;
+    height: 360px;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
   }
   body .heading h1 {
     font-size: 3rem;
@@ -812,14 +819,17 @@ form input {
     margin-bottom: 20px;
   }
   .formBackground {
-    height: 80vh;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    height: 600px;
   }
   .contact-form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 70vh;
+    height: 575px;
   }
   .contact-form .column {
     width: 80%;
@@ -845,7 +855,8 @@ form input {
 
 @media (max-width: 576px) {
   body .heading {
-    height: 50vh;
+    height: 330px;
+    min-height: 330px;
     margin: 10% 0;
     margin-bottom: 5%;
   }
@@ -865,10 +876,12 @@ form input {
     margin: 1.5em 0;
   }
   .formBackground {
-    height: 95vh;
+    height: 650px;
+    min-height: 650px;
   }
   .contact-form {
-    height: 90vh;
+    height: 620px;
+    min-height: 620px;
   }
   .contact-form .column {
     width: 85%;
@@ -893,7 +906,8 @@ form input {
 
 @media (max-width: 480px) {
   body .heading {
-    height: 60vh;
+    height: 412px;
+    min-height: 412px;
     margin: 5% 0;
   }
   body .heading h1 {
@@ -907,7 +921,12 @@ form input {
     width: 90%;
   }
   .formBackground {
-    height: 98vh;
+    height: 700px;
+    min-height: 700px;
+  }
+  .contact-form {
+    height: 650px;
+    min-height: 650px;
   }
   .contact-form .column {
     width: 92%;
