@@ -1191,6 +1191,9 @@ h1 {
 }
 
 @media (max-width: 996px) {
+  .header {
+    min-height: 675px;
+  }
   .header .headertext h1 {
     font-size: 3.5rem;
   }

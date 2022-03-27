@@ -697,6 +697,9 @@ body {
 }
 
 @media (max-width: 996px) {
+  .header {
+    min-height: 435px;
+  }
   .services {
     left: 35%;
   }
