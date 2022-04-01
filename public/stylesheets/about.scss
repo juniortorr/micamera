@@ -11,7 +11,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 .fade-in {
-  opacity: 0; 
+  opacity: 0;
   transition: opacity 475ms ease-in;
 }
 
@@ -30,39 +30,62 @@ p {
 
 .all-content {
   margin: 0 auto;
-  width: fit-content;
+  width: 996px;
+  max-width: 90vw;
+  height: fit-content;
   background-color: rgba(212, 225, 240, 0.6);
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  margin: auto;
   margin-top: 6em;
-  padding: 3em 3em;
+  padding: 3em;
   box-sizing: border-box;
-  img {
-    float: left;
-    width: 400px;
-    margin-right: 1.5rem;
-    margin-bottom: 1.5rem;
+
+  .h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1.5rem 0;
+    height: fit-content;
+    margin-bottom: 3em;
+
+    h1 {
+      font-size: 3.8rem;
+      font-weight: 400;
+      margin-top: 0;
+      margin-bottom: 0;
+      text-align: center;
+    }
+
+    .line-break {
+      display: inline-block;
+      width: 10%;
+      border-bottom: solid 1px black;
+      line-height: 0.1em;
+      margin: 5px 5px 5px;
+    }
+  }
+
+  .content {
+    height: fit-content;
+
+    img {
+      float: left;
+      width: 375px;
+      height: fit-content;
+      max-width: 400px;
+      margin-right: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
   }
 }
-.content {
-  height: fit-content;
-}
-
-
 
 .text {
   max-width: 900px;
   height: 100%;
 
-  h1 {
-    font-size: 2.5rem;
-    font-weight: 400;
-    width: 8rem;
-    margin-top: 0;
-    margin-bottom: 0.5em;
-    border-bottom: black 2px solid;
-    display: inline-block;
-  }
   .about-me-paras {
     p {
       font-size: 1.2rem;
@@ -72,7 +95,7 @@ p {
       margin-bottom: 0.75rem;
     }
     .p-intro {
-      margin-top: 10px;
+      margin-bottom: 1.5em;
     }
     .p5 {
       text-align: right;
@@ -121,20 +144,30 @@ a:hover {
 
 @media (max-width: 996px) {
   .all-content {
-    width: 100vw;
-    max-width: 100vw;
+    width: 90vw;
+    padding: 2.5em;
+
+    .h1 {
+      h1 {
+        font-size: 3.5rem;
+      }
+    }
 
     .content {
-      width: 100%;
-      max-width: 100%;
-
       img {
-        width: 20rem;
+        width: 300px;
         height: fit-content;
+        max-height: 450px;
       }
+    }
 
-      .text {
-        width: fit-content;
+    .text {
+      width: fit-content;
+
+      .about-me-paras {
+        p {
+          font-size: 1.1rem;
+        }
       }
     }
   }
@@ -142,21 +175,25 @@ a:hover {
 
 @media (max-width: 768px) {
   .all-content {
-    padding: 7rem 2rem;
-    width: 100%;
-    height: 100%;
-    margin: 0;
+    padding: 2rem;
+
+    .h1 {
+      margin-bottom: 2.5em;
+
+      h1 {
+        font-size: 3rem;
+      }
+    }
 
     .content {
       img {
-        width: 17rem;
+        width: 250px;
+        max-height: 375px;
         margin-right: 1.2rem;
         margin-bottom: 0.6rem;
       }
+
       .text {
-        h1 {
-          font-size: 2rem;
-        }
         .about-me-paras {
           p {
             font-size: 1rem;
@@ -167,8 +204,6 @@ a:hover {
   }
 
   .text {
-
-
     .about-me-paras {
       p {
         font-size: 17px;
@@ -178,45 +213,20 @@ a:hover {
 }
 @media (max-width: 576px) {
   .all-content {
-    padding-top: 6rem;
-    .content {
-      img {
-        width: 12rem;
-      }
+    padding: 1.5rem;
 
-      .text {
-        h1 {
-          font-size: 1.7rem;
-          width: 6rem;
-          margin-bottom: 0.2em;
-        }
+    .h1 {
+      margin-bottom: 2em;
+
+      h1 {
+        font-size: 2.5rem;
       }
     }
-  }
-}
-
-@media (max-width: 480px) {
-  .all-content {
-    padding: 6rem 1.5rem;
 
     .content {
       img {
-        width: 10rem;
-        max-height: 240px;
-      }
-
-      .text {
-        h1 {
-          font-size: 1.5rem;
-          width: 5rem;
-          margin-bottom: 0;
-        }
-      }
-
-      .about-me-paras {
-        p {
-          font-size: 0.9em;
-        }
+        width: 175px;
+        max-height: 262.5px;
       }
 
       .aboutButtons {
@@ -230,15 +240,49 @@ a:hover {
   }
 }
 
+@media (max-width: 480px) {
+  .all-content {
+    padding: 1rem;
+
+    .h1 {
+      margin: 1em 0 1.25em;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+
+      img {
+        align-self: center;
+        width: 175px;
+        height: 175px;
+        object-fit: cover;
+        object-position: 0 0;
+        border-radius: 50%;
+        margin: 0;
+      }
+
+      .about-me-paras {
+        .p-intro {
+          margin: 1em 0 1em;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 300px) {
   .all-content {
-    padding: 5rem 1rem;
-    .content {
-      img {
-        width: 7rem;
-        max-height: 168px;
-        margin-right: 0.8rem;
-      }
+    margin: 0;
+    width: 100vw;
+    max-width: 100vw;
+
+    .h1 {
+      margin-top: 5rem;
     }
   }
 }
