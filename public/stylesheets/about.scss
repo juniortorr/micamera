@@ -76,6 +76,7 @@ p {
       width: 375px;
       height: fit-content;
       max-width: 400px;
+      max-height: 562px;
       margin-right: 1.5rem;
       margin-bottom: 1.5rem;
     }
@@ -141,6 +142,8 @@ a:hover {
     cursor: pointer;
   }
 }
+
+
 
 @media (max-width: 996px) {
   .all-content {

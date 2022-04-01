@@ -147,28 +147,36 @@ h1 {
 .homeBtn {
   width: 55%;
   height: 2.5em;
-  border-radius: 5px;
-  font-size: 1.2rem;
   margin-top: 0.5em;
-  border: 2px solid white;
   color: white;
-  background-color: #5c88bc;
+  
   transition: all 0.25s;
 
-  a {
+  button {
+    border: 2px solid white;
+    background-color: #5c88bc;
+    height: 2.3em;
+    width: 55%;
     text-decoration: none;
     color: white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-top: 0.5em;
+
   }
 }
 
 .homeBtn:hover {
-  background-color: white;
+  
   transform: translateY(-0.25em);
-  cursor: pointer;
+  
 
-  a {
+  button {
     color: #5c88bc;
     transition: 0.2s;
+    background-color: white;
+    cursor: pointer;
+    
   }
 }
 
@@ -982,7 +990,7 @@ h1 {
       }
     }
     .homeBtn {
-      a {
+      button {
         font-size: 1rem;
       }
     }

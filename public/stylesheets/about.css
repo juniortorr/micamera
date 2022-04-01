@@ -607,6 +607,7 @@ p {
   height: -moz-fit-content;
   height: fit-content;
   max-width: 400px;
+  max-height: 562px;
   margin-right: 1.5rem;
   margin-bottom: 1.5rem;
 }
