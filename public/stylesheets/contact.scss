@@ -25,7 +25,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 4em;
+    margin-top: 6em;
     width: 100%;
     height: 70vh;
     max-width: 1500px;
@@ -182,6 +182,11 @@ form {
 }
 
 @media(min-width: 1500px) {
+  body {
+    .heading{
+      margin-top: 4em;
+    }
+  }
   .formBackground {
     .contact-form {
       .column {
@@ -206,6 +211,11 @@ form {
 
 // Start Media Queries
 @media (max-width: 1200px) {
+  body {
+    .heading {
+      margin-top: 4em;
+    }
+  }
   .main-paragraph {
     margin-top: 0;
   }
@@ -235,15 +245,18 @@ form {
 }
 
 @media (max-width: 992px) {
-  .heading {
-    height: 475px;
-    min-height: 475px;
-    h1 {
-      font-size: 3.5rem;
-    }
-    .subheading {
-      font-size: 1.4rem;
-      margin-bottom: .75em;
+  body {
+    .heading {
+      height: 475px;
+      min-height: 475px;
+      margin-top: 5em;
+      h1 {
+        font-size: 3.5rem;
+      }
+      .subheading {
+        font-size: 1.4rem;
+        margin-bottom: .75em;
+      }
     }
   }
 
