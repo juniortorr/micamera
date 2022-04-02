@@ -46,6 +46,4 @@ app.get('/services', (req, res) => {
 
 //End Routes
 
-app.listen(port, () => {
-  console.log(`Listening at http://localhost:${port}`);
-});
+app.listen();
